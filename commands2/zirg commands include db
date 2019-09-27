@@ -1,0 +1,1780 @@
+Zirg Commands:
+1  2019-04-02 23:27:14 cd public_
+    2  2019-04-02 23:27:17 cd public_html/
+    3  2019-04-02 23:27:20 ls
+    4  2019-04-02 23:27:29 unzip public_html.zip
+    5  2019-04-02 23:49:55 ls
+    6  2019-04-02 23:50:01 cd public_html/
+    7  2019-04-02 23:50:02 ls
+    8  2019-04-02 23:50:26 mv 2april2019.zip /home/zirg/
+    9  2019-04-02 23:50:29 ls
+   10  2019-04-02 23:50:46 cd ..
+   11  2019-04-02 23:50:47 ls
+   12  2019-04-02 23:51:03 rm -r public_html/*
+   13  2019-04-02 23:52:16 unzip 2april2019.zip public_html/test
+   14  2019-04-02 23:52:22 unzip 2april2019.zip public_html/test/
+   15  2019-04-02 23:52:49 unzip 2april2019.zip /home/zirg/public_html/test/
+   16  2019-04-02 23:52:58 ls
+   17  2019-04-02 23:53:09 unzip 2april2019.zip /home/zirg/public_html/test
+   18  2019-04-02 23:53:25 mv 2april2019.zip public_html/
+   19  2019-04-02 23:53:31 cd public_html/
+   20  2019-04-02 23:53:33 ls
+   21  2019-04-02 23:53:46 unzip 2april2019.zip
+   22  2019-04-03 01:01:01 ls
+   23  2019-04-03 01:01:17 mv 2april2019.zip /home/zirg/
+   24  2019-04-03 01:01:19 ls
+   25  2019-04-03 01:01:23 cd ..
+   26  2019-04-03 01:01:25 ls
+   27  2019-04-02 23:41:12 cd public_html
+   28  2019-04-02 23:41:20 php bin/magento cache:flush
+   29  2019-04-02 23:41:29 php bin/magento indexer:reindex
+   30  2019-04-02 23:45:38 php bin/magento setup:upgrade
+   31  2019-04-02 23:46:04 crontab -r
+   32  2019-04-02 23:46:13 php bin/magento setup:di:compile
+   33  2019-04-02 23:46:55 php bin/magento setup:static-content:deploy -f
+   34  2019-04-03 00:03:34 php bin/magento setup:upgrade
+   35  2019-04-03 00:04:01 php bin/magento setup:static-content:Deploy -f
+   36  2019-04-03 00:05:02 php bin/magento setup:di:compile
+   37  2019-04-03 00:05:50 php bin/magento indexer:reindex
+   38  2019-04-03 00:07:12 php bin/magento cache:flush
+   39  2019-04-03 00:07:28 php bin/magento cron:install
+   40  2019-04-03 00:07:33 php bin/magento cron:run
+   41  2019-04-03 01:03:52 free
+   42  2019-04-03 01:05:10 php bin/magento cache:status
+   43  2019-04-03 01:05:20 php bin/magento deploy:mode:show
+   44  2019-04-04 02:49:41 cd public_html
+   45  2019-04-04 22:27:45 cd public_html
+   46  2019-04-04 22:27:54 php bin/magento cache:flush
+   47  2019-04-04 22:39:23 php -i | grep 'php.ini'
+   48  2019-04-04 22:39:52 which php
+   49  2019-04-04 22:46:51 sudo deluser zirg sudo
+   50  2019-04-04 22:54:58 igconfig
+   51  2019-04-04 22:55:04 ifconfig
+   52  2019-04-04 23:12:05 php -i | grep 'php.ini'
+   53  2019-04-05 01:07:40 grep -rl "MBI" /home/zirg/public_html/app/*
+   54  2019-04-05 01:09:34 grep -rl "Subscription for MBI service has been failed" /home/zirg/public_html/*
+   55  2019-04-05 01:16:43 grep -rl "Analytics" /home/zirg/public_html/*
+   56  2019-04-05 01:16:54 grep -rl "Analytics" /home/zirg/public_html/app/*
+   57  2019-04-05 01:22:02 php bin/magento cache:flush
+   58  2019-04-05 23:36:12 cd public_html
+   59  2019-04-05 23:36:23 php bin/magento module:status
+   60  2019-04-05 23:42:05 php bin/magento module:enable Magento_Analytics
+   61  2019-04-05 23:51:55 php bin/magento cache:flush
+   62  2019-04-08 03:34:07 pwd
+   63  2019-04-08 03:34:11 cd public_html/
+   64  2019-04-08 03:34:14 php bin/magento cache:flush
+   65  2019-04-08 04:12:44 pwd
+   66  2019-04-07 22:11:24 cd public_html
+   67  2019-04-07 22:42:48 cd ..
+   68  2019-04-07 22:43:25 zip -r public_html_8april2019.zip /home/zirg/public_html/*
+   69  2019-04-07 22:53:13 ls
+   70  2019-04-07 22:55:14 mv public_html_8april2019.zip /home/magentosaunitech/public_html/
+   71  2019-04-07 23:59:15 sudo a2enmod rewrite && sudo service apache2 restart
+   72  2019-04-08 00:43:35 php bin/magento setup:upgrade
+   73  2019-04-08 00:43:53 cd public_html
+   74  2019-04-08 00:43:56 php bin/magento setup:upgrade
+   75  2019-04-08 00:44:21 php bin/magento setup:static-content:deploy -f
+   76  2019-04-08 00:45:42 php bin/magento cache:flush
+   77  2019-04-08 01:00:50 php bin/magento setup:upgrade
+   78  2019-04-08 01:03:02 php bin/magento setup:static-content:deploy -f
+   79  2019-04-08 01:05:58 php bin/magento cache:flush
+   80  2019-04-08 01:06:37 php bin/magento setup:upgrade
+   81  2019-04-08 01:07:12 php bin/magento setup:static-content:deploy -f
+   82  2019-04-08 01:09:59 php bin/magento cache:flush
+   83  2019-04-08 01:10:25 php bin/magento setup:upgrade
+   84  2019-04-08 01:11:13 php bin/magento setup:static-content:deploy -f
+   85  2019-04-08 01:12:33 php bin/magento setup:upgrade
+   86  2019-04-08 01:14:16 php bin/magento cache:flush
+   87  2019-04-08 01:14:57 php bin/magento setup:upgrade
+   88  2019-04-08 01:15:13 php bin/magento setup:static-content:deploy -f
+   89  2019-04-08 01:16:36 php bin/magento cache:flush
+   90  2019-04-08 01:19:10 php bin/magento setup:upgrade
+   91  2019-04-08 01:19:24 php bin/magento setup:static-content:deploy -f
+   92  2019-04-08 01:21:17 php bin/magento cache:flush
+   93  2019-04-08 01:28:24 php bin/magento setup:upgrade
+   94  2019-04-08 01:28:44 php bin/magento setup:static-content:deploy -f
+   95  2019-04-08 01:42:22 php bin/magento setup:upgrade
+   96  2019-04-08 01:45:08 rm -rf pub/static/frontend/* pub/static/adminhtml/* var/cache/ var/generation/ var/page_cache/ var/view_preprocessed/ var/composer_home generated/
+   97  2019-04-08 02:00:46 php bin/magento setup:static-content:deploy -f
+   98  2019-04-08 03:22:07 cd public_html
+   99  2019-04-08 03:22:09 php bin/magento cache:flush
+  100  2019-04-08 04:31:47 chmod -R 777 /home/zirg/public_html/*
+  101  2019-04-08 05:46:58 find . -type d -exec chmod 755 {} \;
+  102  2019-04-08 05:48:05 find ./pub/media -type d -exec chmod 777 {} \;
+  103  2019-04-08 05:48:13 find ./pub/static -type d -exec chmod 777 {} \;
+  104  2019-04-08 05:48:26 chmod 777 ./app/etc
+  105  2019-04-08 05:48:35 chmod 644 ./app/etc/*.xml
+  106  2019-04-08 05:48:44 php bin/magento cache:clean
+  107  2019-04-08 05:48:52 php bin/magento cache:flush
+  108  2019-04-08 05:48:59 php bin/magento setup:upgrade
+  109  2019-04-08 05:49:16 rm -rf pub/static/frontend/* pub/static/adminhtml/* var/cache/ var/generation/ var/page_cache/ var/view_preprocessed/ var/composer_home generated/
+  110  2019-04-08 05:49:25 php -dmemory_limit=6G bin/magento setup:static-content:deploy -f
+  111  2019-04-08 06:29:45 crontab -r
+  112  2019-04-08 06:45:41 php bin/magento cache:flush
+  113  2019-04-08 06:15:31 cd public_html/
+  114  2019-04-08 06:15:36 php bin/magento setup:upgrade
+  115  2019-04-08 06:15:56 php bin/magento setup:static-content:deploy -f
+  116  2019-04-08 06:16:59 php bin/magento cache:flush
+  117  2019-04-09 06:12:29 cd public_html
+  118  2019-04-09 06:12:31 php bin/magento cache:flush
+  119  2019-04-09 06:17:32 php bin/magento cron:install
+  120  2019-04-09 06:21:30 crontab -r
+  121  2019-04-09 06:21:32 php bin/magento cron:install
+  122  2019-04-09 06:21:43 php bin/magento cron:run
+  123  2019-04-10 07:16:42 cd public_html
+  124  2019-04-10 07:25:24 php bin/magento cache:flush
+  125  2019-04-10 07:33:28 crontab -r
+  126  2019-04-10 07:33:47 php bin/magento cache:flush
+  127  2019-04-10 07:48:22 crontab -l
+  128  2019-04-09 22:12:44 cd public_html
+  129  2019-04-09 22:12:55 php bin/magento cache:flush
+  130  2019-04-10 01:17:51 php bin/magento setup:upgrade --keep-generated
+  131  2019-04-10 01:19:28 clear
+  132  2019-04-10 01:19:30 php bin/magento setup:upgrade --keep-generated
+  133  2019-04-10 01:38:39 php bin/magento setup:setup:static-content:deploy -f
+  134  2019-04-10 01:38:49 php bin/magento setup:static-content:deploy -f
+  135  2019-04-10 01:39:51 crontab -r
+  136  2019-04-10 01:40:02 php bin/magento cron:install
+  137  2019-04-10 01:40:07 php bin/magento cron:run
+  138  2019-04-10 01:42:17 crontab -l
+  139  2019-04-10 01:47:33 php bin/magento module:disable Amasty_Base
+  140  2019-04-10 01:47:43 php bin/magento module:disable Amasty_Sorting
+  141  2019-04-10 01:47:49 php bin/magento module:disable Amasty_Base
+  142  2019-04-10 01:49:15 crontab -r
+  143  2019-04-10 01:49:20 php bin/magento cron:install
+  144  2019-04-10 01:50:02 crontab -l
+  145  2019-04-10 01:50:09 php bin/magento cron:run
+  146  2019-04-10 02:02:56 php bin/magento setup:upgrade
+  147  2019-04-10 02:03:47 php bin/magento setup:setup:static-content:deploy -f
+  148  2019-04-10 02:07:47 crontab -r
+  149  2019-04-10 02:08:07 php bin/magento cron:install
+  150  2019-04-10 02:08:14 php bin/magento cron:run
+  151  2019-04-10 02:10:12 crontab -l
+  152  2019-04-10 02:10:23 which php
+  153  2019-04-10 02:10:43 crontab -e
+  154  2019-04-10 02:11:38 php bin/magento cron:run
+  155  2019-04-10 02:17:33 php bin/magento setup:upgrade
+  156  2019-04-10 02:18:36 php bin/magento setup:static-content:deploy -f
+  157  2019-04-10 02:19:50 crontab -r
+  158  2019-04-10 02:20:13 php bin/magento cron:install
+  159  2019-04-10 02:20:19 php bin/magento cron:run
+  160  2019-04-10 02:23:11 grep -rl "ddg_automation_importer" /home/zirg/public_html/*
+  161  2019-04-10 02:26:35 which php
+  162  2019-04-10 02:26:57 php bin/magento cron:install
+  163  2019-04-10 02:27:03 crontab -e
+  164  2019-04-10 02:28:12 php bin/magento cron:run
+  165  2019-04-10 02:37:25 php bin/magento setup:upgrade
+  166  2019-04-10 02:38:10 php bin/magento setup:static-content:deploy -f
+  167  2019-04-10 02:45:27 php bin/magento cache:flush
+  168  2019-04-10 03:19:53 which php
+  169  2019-04-10 03:20:00 crontab -r
+  170  2019-04-10 03:20:07 php bin/magento cron:install
+  171  2019-04-10 03:20:19 crontab -e
+  172  2019-04-10 03:24:20 php bin/magento cache:flush
+  173  2019-04-10 04:34:52 yum install php7.2-curl
+  174  2019-04-10 04:47:46 php bin/magento cache:flush
+  175  2019-04-10 04:52:59 php bin/magento setup:upgrade
+  176  2019-04-10 04:53:29 php bin/magento cron:run
+  177  2019-04-10 05:04:11 php bin/magento cache:flush
+  178  2019-04-10 05:12:25 php bin/magento setup:upgrade
+  179  2019-04-10 05:12:49 php bin/magento setup:static-content:deploy -f
+  180  2019-04-10 05:13:47 crontab -r
+  181  2019-04-10 05:13:58 php bin/magento cron:insta;;
+  182  2019-04-10 05:14:02 php bin/magento cron:install
+  183  2019-04-10 05:14:07 php bin/magento cron:run
+  184  2019-04-10 05:14:29 php bin/magento cache:flush
+  185  2019-04-11 06:49:09 cd public_html
+  186  2019-04-11 06:49:11 php bin/magento cron:install
+  187  2019-04-11 06:49:15 php bin/magento cron:run
+  188  2019-04-11 06:49:46 php bin/magento cache:flush
+  189  2019-04-11 06:58:17 php bin/magento setup:upgrade
+  190  2019-04-11 06:58:36 php bin/magento setup:di:compile
+  191  2019-04-11 07:02:01 php bin/magento setup:static-content:deploy -f
+  192  2019-04-11 07:03:17 php bin/magento indexer:reindex
+  193  2019-04-11 07:04:19 php bin/magento cache:flush
+  194  2019-04-11 07:09:36 php bin/magento deploy:mode:show
+  195  2019-04-11 12:20:53 pwd
+  196  2019-04-11 12:20:58 cd public_html/
+  197  2019-04-11 12:21:04 php bin/magento deploy:mode:show
+  198  2019-04-11 22:22:49 cd public_html
+  199  2019-04-11 22:22:54 php bin/magento cache:flush
+  200  2019-04-11 23:48:11 pwd
+  201  2019-04-11 23:48:25 zip -r /home/zirg/public_html
+  202  2019-04-11 23:48:50 zip -r /home/zirg/public_html/pub/media/wysiwg
+  203  2019-04-11 23:49:08 zip  /home/zirg/public_html/pub/media/wysiwg
+  204  2019-04-12 02:07:36 php bin/magento deploy:mode:set developer
+  205  2019-04-12 02:10:38 php bin/magento deploy:mode:set production
+  206  2019-04-12 04:39:51 cd public_html
+  207  2019-04-12 04:40:03 cd ..
+  208  2019-04-12 04:40:39 zip -r public_html.zip public_html/*
+  209  2019-04-12 12:04:54 cd public_html
+  210  2019-04-12 12:05:03 php bin/magento cache:flush
+  211  2019-04-12 12:05:26 php bin/magento deploy:mode:show
+  212  2019-04-12 12:05:32 cmd
+  213  2019-04-12 12:05:36 pwd
+  214  2019-04-12 12:05:38 ls
+  215  2019-04-12 12:05:49 php bin/magento indexer:reindex
+  216  2019-04-12 12:07:42 php bin/magento deploy:mode:show
+  217  2019-04-12 12:07:51 php bin/magento cache:flush
+  218  2019-04-12 12:07:56 php bin/magento indexer:reindex
+  219  2019-04-12 12:08:18 php bin/magento deploy:mode:set production
+  220  2019-04-12 12:08:22 pwd
+  221  2019-04-12 12:09:15 php bin/magento deploy:mode:set production
+  222  2019-04-12 12:09:55 php bin/magento indexer:reindex
+  223  2019-04-12 12:10:20 php bin/magento deploy:mode:show
+  224  2019-04-12 12:10:47 php bin/magento setup:upgrade
+  225  2019-04-12 12:19:12 cd public_html
+  226  2019-04-12 12:19:21 php bin/magento deploy:mode:show
+  227  2019-04-12 12:19:37 php bin/magento cache:flush
+  228  2019-04-15 00:32:57 cd poblic_htm l
+  229  2019-04-15 00:33:00 cd poblic_html
+  230  2019-04-15 00:33:04 cd public_html
+  231  2019-04-15 00:33:15 php bin/magento setup:db:status
+  232  2019-04-15 00:38:02 php bin/magento info:dependencies:show-modules
+  233  2019-04-15 01:01:27 date
+  234  2019-04-15 01:06:36 magento_version
+  235  2019-04-15 02:37:32 grep -rl "authorization-link" /home/zirg/public_html/app
+  236  2019-04-15 02:38:11 grep -rl "header-account" /home/zirg/public_html/app
+  237  2019-04-17 22:03:38 cd public_html
+  238  2019-04-17 22:03:48 php bin/magento cache:flush
+  239  2019-04-18 01:24:25 yum repolist
+  240  2019-04-18 03:57:38 mysql -u zirg_Produ_User -p
+  241  2019-04-18 04:02:26 mysql -u zirg_Produ_User
+  242  2019-04-18 04:02:29 mysql -u zirg_Produ_User -p
+  243  2019-04-19 22:58:12 cd public_
+  244  2019-04-19 22:58:16 cd public_html
+  245  2019-04-19 22:58:22 pwd
+  246  2019-04-23 04:24:21 cd public_html
+  247  2019-04-23 04:24:34 php bin/magento setup:upgrade
+  248  2019-04-23 04:25:01 php bin/magento setup:static-content:deploy -f
+  249  2019-04-25 23:55:10 zip -r public_html26april2019.zip  public_html/*
+  250  2019-04-26 00:00:49 ls
+  251  2019-04-26 03:04:04 cd publiv_html
+  252  2019-04-26 03:04:08 cd public_html
+  253  2019-04-26 03:04:17 php bin/magento setup:upgrade
+  254  2019-04-26 03:04:49 php bin/magento setup:static-content:Deploy -f
+  255  2019-04-26 03:05:48 php bin/magento cache:flush
+  256  2019-04-26 23:23:31 cd public_html
+  257  2019-04-26 23:23:54 mkdir test
+  258  2019-04-27 02:05:32 mysql -u root -p
+  259  2019-04-27 02:27:28 cd..
+  260  2019-04-27 02:27:29 cd ..
+  261  2019-04-27 02:27:32 ls
+  262  2019-04-27 02:27:49 mysql -u -zirg_Produ_User -p
+  263  2019-04-27 02:28:35 Zirg_Produ_Password@cd public_html
+  264  2019-04-27 02:28:37 mysql -u -zirg_Produ_User -p
+  265  2019-04-27 02:28:52 mysql -u zirg_Produ_User -p
+  266  2019-04-27 02:41:50 mysql -u zirg_Produ_User -p zirg_produ < /home/zirg/backup/zirg_produ_27april2019.sql
+  267  2019-04-27 02:43:13 mysql -u zirg_Produ_User@localhost -p zirg_produ < /home/zirg/backup/zirg_produ_27april2019.sql
+  268  2019-04-27 02:43:33 mysql -u zirg_Produ_User -p zirg_produ < /home/zirg/backup/zirg_produ_27april2019.sql
+  269  2019-04-27 02:49:53 mysqldump -u zirg_Produ_User -p zirg_produ > /home/zirg/backup/zirg_produ_27april2019_main.sql
+  270  2019-04-27 02:50:25 mysql -u zirg_Produ_User -p zirg_produ < /home/zirg/backup/zirg_produ_27april2019_main.sql
+  271  2019-04-27 02:59:18 mysql -u zirg_Produ_User -p zirg_produ < /home/zirg/backup/zirg_prod_April_27_2019.sql
+  272  2019-04-26 22:10:47 cd public_html
+  273  2019-04-26 22:10:55 php bin/magento cache:flush
+  274  2019-04-26 23:34:15 cd test
+  275  2019-04-26 23:34:17 ls
+  276  2019-04-26 23:34:27 unzip public_html_17april_pure.zip
+  277  2019-04-27 00:01:28 php bin/magento cache:flush
+  278  2019-04-27 00:11:27 php bin/magento indexer:Reindex
+  279  2019-04-27 00:11:31 php bin/magento cache:flush
+  280  2019-04-27 02:02:35 mysql -u root -p
+  281  2019-04-27 02:02:54 mysql -u Zirg_Produ_User -p
+  282  2019-04-27 02:09:15 mysql -u root -p
+  283  2019-04-27 02:12:40 mysql -u zirg -p
+  284  2019-04-27 02:12:54 cd ..
+  285  2019-04-27 02:26:08 mysql -u zirg_Produ_User -p
+  286  2019-04-27 02:31:36 mysql -u zirg_Produ_User -p zirg_produ < /home/zirg/backup/zirg_produ_27april2019.sql
+  287  2019-04-27 03:28:20 php bin/magento cache:flush
+  288  2019-04-27 03:47:58 cp /home/m23saunitech/public_html/app/code/Pww/Footercategory //home/m23saunitech/public_html/app/code/Pww/test/
+  289  2019-04-27 03:48:13 cp /home/m23saunitech/public_html/app/code/Pww/Footercategory /home/m23saunitech/public_html/app/code/Pww/test/
+  290  2019-04-27 03:48:58 cp -r /home/m23saunitech/public_html/app/code/Pww/Footercategory /home/m23saunitech/public_html/app/code/Pww/test/
+  291  2019-04-27 03:49:38 cp -a /home/m23saunitech/public_html/app/code/Pww/Footercategory /home/m23saunitech/public_html/app/code/Pww/test/
+  292  2019-04-27 03:50:50 cp -a /home/m23saunitech/public_html/test/app/code/Pww/Footercategory /home/m23saunitech/public_html/test/app/code/Pww/test/
+  293  2019-04-27 03:51:00 cp  /home/m23saunitech/public_html/test/app/code/Pww/Footercategory /home/m23saunitech/public_html/test/app/code/Pww/test/
+  294  2019-04-27 04:04:27 cd test
+  295  2019-04-27 04:04:51 chmod -R 777 var/export/images
+  296  2019-04-27 04:15:51 chmod -R 777 var
+  297  2019-04-27 04:15:56 chmod -R 777 var/export
+  298  2019-04-27 04:16:06 chmod -R 777 var/export/images
+  299  2019-04-27 04:17:08 php bin/magento cache:flush
+  300  2019-04-27 04:23:04 rm -r /home/zirg/public_html/pub/media/catalog/product/*
+  301  2019-04-27 04:23:15 php bin/magento cache:flush
+  302  2019-04-27 04:54:39 php bin/magento indexer:reindex
+  303  2019-04-27 04:54:57 php bin/magento cache:flush
+  304  2019-04-27 05:35:37 php bin/magento indexer:reindex
+  305  2019-04-27 05:36:00 php bin/magento cache:flush
+  306  2019-04-27 05:45:33 cd public_html
+  307  2019-04-27 05:45:40 php bin/magento cache:flush
+  308  2019-04-29 00:49:41 cd public_html
+  309  2019-04-29 00:49:45 cd test
+  310  2019-04-29 00:49:54 php bin/magento indexer:reindex
+  311  2019-04-29 00:52:44 php bin/magento static-content:deploy -f
+  312  2019-04-29 00:52:51 php bin/magento setup:static-content:deploy -f
+  313  2019-04-29 00:53:12 php bin/magento cache:flush
+  314  2019-04-29 01:03:09 chmod -R 777 /home/zirg/public_html/test/*
+  315  2019-04-29 01:55:21 composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=2.3.1 /var/www/html/magento2
+  316  2019-04-29 01:55:31 ls
+  317  2019-04-29 01:55:59 cd /var/www/html
+  318  2019-04-29 01:56:01 ls
+  319  2019-04-29 02:18:47 cd ..
+  320  2019-04-29 02:18:58 cd /home/zirg/public_html
+  321  2019-04-29 02:19:03 php --version
+  322  2019-04-29 04:02:02 cd test
+  323  2019-04-29 04:02:10 php bin/magento cache:flush
+  324  2019-04-29 04:48:57 cd ..
+  325  2019-04-29 04:49:05 php bin/magento cache:flush
+  326  2019-04-29 04:51:23 cd  test
+  327  2019-04-29 04:52:50 php bin/magento cache:flush
+  328  2019-04-29 05:02:15 pcd ..
+  329  2019-04-29 05:02:17 cd ..
+  330  2019-04-29 05:02:26 php bin/magento cache:flush
+  331  2019-04-29 06:57:20 cd test
+  332  2019-04-29 06:57:37 crontab -e
+  333  2019-04-30 07:16:59 cd public_html/test
+  334  2019-04-30 07:17:09 php bin/magento cache:flush
+  335  2019-04-29 22:38:03 cd public_html
+  336  2019-04-29 22:38:13 php bin/magento cache:flush
+  337  2019-04-29 22:39:17 php bin/magento setup:static-content:deploy -f
+  338  2019-04-29 22:39:33 php bin/magento cache:flush
+  339  2019-04-29 22:41:55 php bin/magento indexer:reindex
+  340  2019-04-29 22:45:43 grep -rl "tab-link" /home/zirg/public_html/*
+  341  2019-04-29 22:49:11 cd test
+  342  2019-04-29 22:49:21 php bin/magento cache:flush
+  343  2019-04-29 22:51:40 history
+  344  2019-04-29 23:09:10 cd ..
+  345  2019-04-29 23:21:29 cd public_html
+  346  2019-04-29 23:21:36 php bin/magento cache:flush
+  347  2019-04-30 01:05:12 zip -r test.zip app/* -x "app/code"
+  348  2019-04-30 01:07:04 zip -r test.zip app/* -x "/homzirg/public_html/app/code"
+  349  2019-04-30 01:07:23 zip -r test.zip app/* -x "code"
+  350  2019-04-30 01:08:33 zip -r test.zip app/ -x "*/\code*"
+  351  2019-04-30 01:08:42 clear
+  352  2019-04-30 01:08:44 zip -r test.zip app/ -x "*/\code*"
+  353  2019-04-30 01:09:16 cd ..
+  354  2019-04-30 01:09:17 zip -r test.zip app/ -x "*/\code*"
+  355  2019-04-30 01:10:30 zip -r public_html_30april.zip public_html/* -x "*/\test*"
+  356  2019-04-30 01:23:54 ls
+  357  2019-04-30 01:43:18 cd public_html/test
+  358  2019-04-30 01:43:25 php bin/magento cache:flush
+  359  2019-04-30 02:54:25 php bin/magento indexer:reindex
+  360  2019-04-30 02:54:51 php bin/magento cache:flush
+  361  2019-04-30 02:56:11 php bin/magento setup:upgrade
+  362  2019-04-30 02:57:15 php bin/magento setup:static-content:deploy -f
+  363  2019-04-30 02:58:18 php bin/magento cache:flush
+  364  2019-04-30 22:00:33 cd public_html
+  365  2019-04-30 22:00:44 touch testse.php
+  366  2019-04-30 22:00:51 vi testse.php
+  367  2019-04-30 22:01:55 chmod -R 777 /home/zirg/public_html/testse.php
+  368  2019-04-30 22:02:08 ls
+  369  2019-04-30 22:02:38 ls -l
+  370  2019-05-01 00:00:11 cd public_html
+  371  2019-05-01 00:01:01 zip -r testproject.zip test/*
+  372  2019-05-01 00:01:37 ls
+  373  2019-05-01 00:02:14 history
+  374  2019-05-01 00:04:44 zip -r test_1may2019.zip test/ -x "*/\var/export/images*"
+  375  2019-05-01 00:12:49 ls
+  376  2019-05-01 03:34:01 cd ..
+  377  2019-05-01 03:34:09 mkdir alldata
+  378  2019-05-01 03:34:35 mv /home/zirg/public_html/* /home/zirg/alldata/
+  379  2019-05-01 03:34:39 ls
+  380  2019-05-01 03:34:46 cd alldata
+  381  2019-05-01 03:34:48 ls
+  382  2019-05-01 03:34:52 cd ..
+  383  2019-05-01 03:34:56 cd public_html
+  384  2019-05-01 03:34:58 ls
+  385  2019-05-01 03:54:18 unzip soon.zip
+  386  2019-05-01 06:09:15 rm -r public_html/*
+  387  2019-05-01 06:10:07 cd public_html
+  388  2019-05-01 06:10:09 ls
+  389  2019-05-01 06:10:21 unzip soon.zip
+  390  2019-05-06 22:01:42 cd public_html
+  391  2019-05-06 22:01:43 ls
+  392  2019-05-06 22:01:51 cd ..
+  393  2019-05-06 22:01:52 ls
+  394  2019-05-06 22:02:17 rm public_html12_april_2019_pure.zip
+  395  2019-05-06 22:02:19 ls
+  396  2019-05-06 22:02:31 cd alldata
+  397  2019-05-06 22:02:33 ls
+  398  2019-05-06 22:03:27 cd db
+  399  2019-05-06 22:03:29 ls
+  400  2019-05-06 22:20:35 cd ..
+  401  2019-05-06 22:20:54 zip -r alldata.zip alldata/*
+  402  2019-05-06 22:21:16 ls
+  403  2019-05-06 22:21:28 cd backup
+  404  2019-05-06 22:21:30 ls
+  405  2019-05-06 22:21:52 cd ..
+  406  2019-05-06 22:22:09 rm -r backup
+  407  2019-05-06 22:22:11 ls
+  408  2019-05-07 01:02:39 groupadd sftpusers
+  409  2019-05-07 01:05:20 sudo groupadd sftpusers
+  410  2019-05-07 00:46:51 compgen -u
+  411  2019-05-07 00:52:00 clear
+  412  2019-05-07 00:52:02 compgen -u
+  413  2019-05-07 01:08:26 sudo groupadd sftpusers
+  414  2019-05-07 01:08:52 sudo useradd -g sftpusers -s /sbin/nologin yash
+  415  2019-05-07 01:09:12 passwd yash@123Y
+  416  2019-05-07 01:09:20 sudo passwd yash@123Y
+  417  2019-05-07 01:09:53 sudo passwd yash
+  418  2019-05-07 01:13:18 sudo vi /etc/ssh/sshd_config
+  419  2019-05-07 01:15:48 sudo rm -r /etc/ssh/.sshd_config.swp
+  420  2019-05-07 01:15:51 sudo vi /etc/ssh/sshd_config
+  421  2019-05-07 01:18:34 sudo systemctl restart sshd.service
+  422  2019-05-07 01:20:03 cd /home
+  423  2019-05-07 01:20:05 ls
+  424  2019-05-07 01:20:50 chown -R root /home/yash
+  425  2019-05-07 01:21:17 sudo chown -R root /home/yash
+  426  2019-05-07 01:21:36 sudo chmod -R 755 /home/yash
+  427  2019-05-07 01:21:56 sudo mkdir /home/yash/files
+  428  2019-05-07 01:22:25 sudo chown yash. /home/yash/files
+  429  2019-05-07 01:26:28 history
+  430  2019-05-07 01:27:52 sudo su yash
+  431  2019-05-07 01:28:17  su yash
+  432  2019-05-07 01:41:23 su yash
+  433  2019-05-07 01:36:09 vi /etc/passwd
+  434  2019-05-07 01:37:33 sudo chsh -s /bin/bash yash
+  435  2019-05-07 01:37:44 su yash
+  436  2019-05-07 01:59:44 sudosystemctl restart sshd.service
+  437  2019-05-07 01:59:50 sudo systemctl restart sshd.service
+  438  2019-05-07 02:02:34 sudo vi /etc/ssh/sshd_config
+  439  2019-05-07 02:04:54 sudo systemctl restart sshd.service
+  440  2019-05-07 02:05:51 su yash
+  441  2019-05-07 02:09:39 vi /etc/passwd
+  442  2019-05-07 02:12:45 rpm -qa|grep ssh
+  443  2019-05-07 02:24:32 sudo vi /etc/ssh/sshd_config
+  444  2019-05-07 02:26:59 sudo systemctl restart sshd.service
+  445  2019-05-07 02:52:29 useradd -g sftpusers -s /bin/bash yash
+  446  2019-05-07 02:52:36 sudo useradd -g sftpusers -s /bin/bash yash
+  447  2019-05-07 02:52:51 passwd yash
+  448  2019-05-07 02:52:59 sudo passwd yash
+  449  2019-05-07 02:53:23 chown -R root /home/yash
+  450  2019-05-07 02:53:28 sudo chown -R root /home/yash
+  451  2019-05-07 02:53:44 sudo chmod -R 755 /home/yash
+  452  2019-05-07 02:54:06 sudo mkdir /home/yash/files
+  453  2019-05-07 02:54:30 sudo chown yash. /home/yash/files
+  454  2019-05-07 23:12:18 sudo cd public_html
+  455  2019-05-07 23:12:53 sudo apt-get install php-pear
+  456  2019-05-07 23:13:09 sudo yum install php-pear
+  457  2019-05-08 22:50:14 cd public_html
+  458  2019-05-08 22:50:20 mkdir test
+  459  2019-05-08 22:52:14 composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=2.3.1 /home/zirg/public_html/test/*
+  460  2019-05-08 23:10:18 cd test
+  461  2019-05-08 23:10:30 php bin/magento sampledata:deploy
+  462  2019-05-08 23:14:29 php bin/magento setup:uprade
+  463  2019-05-08 23:14:46 php bin/magento setup:upgrade
+  464  2019-05-08 23:17:15 php bin/magento setup:static-content:deploy -f
+  465  2019-05-08 23:28:26 composer config repositories.mirasvit-rwp2
+  466  2019-05-08 23:28:50 composer config repositories.mirasvit-rwp2 composer https://42158:NPBIY0E97U@packages.mirasvit.com/
+  467  2019-05-08 23:29:01 composer require mirasvit/module-rewards:*
+  468  2019-05-08 23:30:25 php bin/magento setup:upgrade
+  469  2019-05-08 23:31:03 php bin/magento setup:static-content:deploy -f
+  470  2019-05-09 00:29:21 cd ..
+  471  2019-05-09 00:29:27 rm -r test
+  472  2019-05-09 00:29:34 mkdir test
+  473  2019-05-09 00:29:44 composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=2.3.1 /home/zirg/public_html/test/*
+  474  2019-05-09 00:35:27 cd test
+  475  2019-05-09 00:35:32 php bin/magento setup:upgrade
+  476  2019-05-09 00:35:51 php bin/magento setup:static-content:deploy -f
+  477  2019-05-09 00:36:35 php bin/magento cache:flush
+  478  2019-05-09 00:37:46 composer config repositories.mirasvit-rwp2 composer https://42158:NPBIY0E97U@packages.mirasvit.com/
+  479  2019-05-09 00:38:30 composer require mirasvit/module-rewards:*
+  480  2019-05-09 00:39:10 php -f bin/magento module:enable Mirasvit_Core Mirasvit_Report Mirasvit_Rewards
+  481  2019-05-09 00:39:26 php -f bin/magento setup:upgrade
+  482  2019-05-09 00:39:52 php -f bin/magento cache:clean
+  483  2019-05-09 00:40:06 rm -rf pub/static/*; rm -rf var/view_preprocessed/*; php -f bin/magento setup:static-content:deploy
+  484  2019-05-09 00:40:12 rm -rf pub/static/*; rm -rf var/view_preprocessed/*; php -f bin/magento setup:static-content:deploy -f
+  485  2019-05-09 02:16:41 php bin/magento sampledata:deploy
+  486  2019-05-09 02:19:34 php -f bin/magento setup:upgrade
+  487  2019-05-09 02:22:09 php bin/magento setup:static-content:deploy -f
+  488  2019-05-09 05:53:23 php bin/magento mirasvit:rewards:update-tiers
+  489  2019-05-09 22:05:53 ls
+  490  2019-05-09 22:06:02 cd alldata
+  491  2019-05-09 22:06:04 ls
+  492  2019-05-09 22:06:33 mkdir test
+  493  2019-05-09 22:06:43 cd ..
+  494  2019-05-09 22:07:07 mkdir test
+  495  2019-05-09 22:07:43 mv test test/
+  496  2019-05-09 22:08:17 mv alldata/test test/
+  497  2019-05-09 22:08:35 cd test
+  498  2019-05-09 22:08:37 ls
+  499  2019-05-09 22:08:43 cd alldata
+  500  2019-05-09 22:08:54 cd ..
+  501  2019-05-09 22:08:56 cd alldata
+  502  2019-05-09 22:09:28 ls
+  503  2019-05-09 22:09:49 cd ..
+  504  2019-05-09 22:10:28 zip -r alldata.zip alldata/*
+  505  2019-05-09 22:16:34 cd public_html
+  506  2019-05-09 22:16:36 ls
+  507  2019-05-09 22:16:39 cd ss1
+  508  2019-05-09 22:16:53 ls
+  509  2019-05-09 22:18:09 cd ss2
+  510  2019-05-09 22:18:11 cd ..
+  511  2019-05-09 22:18:14 cd ss2
+  512  2019-05-09 22:18:31 ls
+  513  2019-05-09 22:18:36 cd public_html
+  514  2019-05-09 22:18:42 sudo cd public_html
+  515  2019-05-09 22:18:51 ls
+  516  2019-05-09 22:18:57 cd public_html
+  517  2019-05-09 22:22:49 sudo cd public_html
+  518  2019-05-09 22:22:51 ls
+  519  2019-05-09 22:22:56 cd public_html
+  520  2019-05-09 22:23:03 sudo cd public_html
+  521  2019-05-09 22:23:04 ls
+  522  2019-05-09 22:23:11 sudo cd public_html
+  523  2019-05-09 22:23:16 ls
+  524  2019-05-09 22:26:31 cd ..
+  525  2019-05-09 22:26:39 cd d..
+  526  2019-05-09 22:26:41 cd ..
+  527  2019-05-09 22:26:47 ls
+  528  2019-05-09 22:26:58 cd zirg
+  529  2019-05-09 22:27:00 ls
+  530  2019-05-09 22:27:13 mv alldata.zip public_html/
+  531  2019-05-09 22:27:19 cd public_html
+  532  2019-05-09 22:27:21 ls
+  533  2019-05-09 22:27:44 unzip alldata.zip
+  534  2019-05-09 22:30:08 ls
+  535  2019-05-09 22:33:27 history
+  536  2019-05-09 22:46:33 cd ..
+  537  2019-05-09 22:46:35 ls
+  538  2019-05-09 22:47:28 rm -r phpserver lib generated dev db bin app
+  539  2019-05-09 22:49:56 rm -r vendor var update setup pub
+  540  2019-05-09 22:50:04 ls
+  541  2019-05-09 22:50:13 ls -l
+  542  2019-05-09 22:51:41 mv /home/zirg/public_html/alldata/* /home/zirg/public_html/
+  543  2019-05-09 23:37:07 cd public_html
+  544  2019-05-09 23:37:09 ls
+  545  2019-05-09 23:37:13 cd sandbox
+  546  2019-05-09 23:37:30 rm -r ss1
+  547  2019-05-09 23:37:38 sudo rm -r ss1
+  548  2019-05-09 23:37:50 sudo rm -r ss2
+  549  2019-05-09 23:37:56 ls
+  550  2019-05-09 23:39:15 mkdir sandbox
+  551  2019-05-10 00:01:00 sudo mv /home/magentosaunitech/public_html
+  552  2019-05-10 00:02:12 sudo mv /home/magentosaunitech/public_html/m231test10may.zip /home/zirg/public_html/sandbox
+  553  2019-05-10 00:02:24 cd sandbox
+  554  2019-05-10 00:02:26 ls
+  555  2019-05-10 00:02:28 ls -l
+  556  2019-05-10 00:02:54 ls
+  557  2019-05-10 00:02:58 unzip  m231test10may.zip
+  558  2019-05-10 00:03:54 ls
+  559  2019-05-10 00:03:58 cd test
+  560  2019-05-10 00:03:59 ls
+  561  2019-05-10 00:04:02 cd ..
+  562  2019-05-10 00:04:38 mv sandbox/test/* sandbox/
+  563  2019-05-10 00:04:44 cd sandbox
+  564  2019-05-10 00:04:45 ls
+  565  2019-05-10 00:04:52 cd test
+  566  2019-05-10 00:04:54 ls
+  567  2019-05-10 00:04:56 cd ..
+  568  2019-05-10 00:05:00 rm -r test
+  569  2019-05-10 00:09:13 cd ..
+  570  2019-05-10 00:09:28 sudo -R 777 sandbox/*
+  571  2019-05-10 00:09:39 sudo chmod -R 777 sandbox/*
+  572  2019-05-10 00:09:46 sudo chmod -R 777 sandbox
+  573  2019-05-10 00:09:52 cd sandbox
+  574  2019-05-10 00:10:00 php bin/magento cache:flush
+  575  2019-05-10 00:20:37 cd public_html
+  576  2019-05-10 00:33:24 cd sandbox
+  577  2019-05-10 00:33:31 php bin/magento cache:flush
+  578  2019-05-10 00:34:29 php bin/magento module:disable Saunitech_Filemanager
+  579  2019-05-10 00:34:34 php bin/magento cache:flush
+  580  2019-05-10 01:21:16 php bin/magento module:enable Saunitech_Filemanager
+  581  2019-05-10 03:30:37 cd ..
+  582  2019-05-10 03:30:39 cd test
+  583  2019-05-10 03:31:34 grep -rl "_rewardsrewards_change_balance" /home/zirg/public_html/test/vendor/mirasvit/*
+  584  2019-05-10 03:31:45 grep -rl "_rewardsrewards_change_balance" /home/zirg/public_html/test/vendor/
+  585  2019-05-10 03:32:07 grep -rl "rewardsrewards_change_balance" /home/zirg/public_html/test/vendor/
+  586  2019-05-10 03:34:09 grep -rl "rewardsrewards_change_balance" /home/zirg/public_htm/test
+  587  2019-05-10 03:34:18 grep -rl "rewardsrewards_change_balance" /home/zirg/public_html/test
+  588  2019-05-10 03:34:30 grep -rl "_rewardsrewards_change_balance" /home/zirg/public_html/test
+  589  2019-05-10 03:35:30 grep -rl "rewards_change_balance" /home/zirg/public_html/test
+  590  2019-05-10 04:11:18 php bin/magento module:enable Pww_Rewardtransfer
+  591  2019-05-10 04:11:29 php bin/magento setup:upgrade
+  592  2019-05-10 04:12:01 php bin/magento setup:static-content:deploy -f
+  593  2019-05-10 04:17:48 rm -r /home/zirg/public_html/test/generated/code/pww
+  594  2019-05-10 04:17:52 rm -r /home/zirg/public_html/test/generated/code/Pww
+  595  2019-05-10 04:22:50 php bin/magento cache:flush
+  596  2019-05-10 04:39:52 cd root
+  597  2019-05-10 04:39:58 cd /root
+  598  2019-05-10 04:40:04 sudo cd /root
+  599  2019-05-10 04:52:22 sudo cd/backup2019
+  600  2019-05-10 04:52:33 sudo cd /backup2019
+  601  2019-05-10 04:53:01 sudo ls/backup2019
+  602  2019-05-10 04:53:07 sudo ls /backup2019
+  603  2019-05-10 04:53:19 sudo ls -l /backup2019
+  604  2019-05-10 04:53:49 sudo chmod -R 777 /backup2019/images
+  605  2019-05-10 04:53:53 sudo chmod -R 777 /backup2019/images/*
+  606  2019-05-10 05:04:21 sudo cp -R /backup2019/images /home/zirg/public_html/test/var/export/
+  607  2019-05-10 05:06:29 sudo cp -R /backup2019/images /home/zirg/public_html/sandbox/var/export/
+  608  2019-05-10 05:08:06 sudo rm -r /home/zirg/public_html/test/var/export/images
+  609  2019-05-10 05:09:45 cd var/export
+  610  2019-05-10 05:09:47 ls
+  611  2019-05-10 05:10:00 cd ..
+  612  2019-05-10 05:10:09 rm -r export
+  613  2019-05-10 05:10:19 sudo rm -r export
+  614  2019-05-10 05:10:30 mkdir export
+  615  2019-05-10 05:10:35 cd ..
+  616  2019-05-10 05:10:45 cd sandbox
+  617  2019-05-10 05:10:50 cd var/export
+  618  2019-05-10 05:10:52 ls
+  619  2019-05-10 05:10:59 pwd
+  620  2019-05-10 05:15:27 cd ..
+  621  2019-05-10 05:15:38 php bin/magento indexer:reindex
+  622  2019-05-10 05:25:35 php bin/magento cache:flush
+  623  2019-05-10 06:05:51 php bin/magento indexer:reindex
+  624  2019-05-10 06:24:12 php bin/magento cache:flush
+  625  2019-05-10 06:26:19 php bin/magento indexer:reindex
+  626  2019-05-10 06:26:48 php bin/magento cache:flush
+  627  2019-05-10 06:29:21 php bin/magento setup:upgrade
+  628  2019-05-10 06:29:52 php bin/magento setup:di:compile
+  629  2019-05-10 06:30:42 php bin/magento index:reindex
+  630  2019-05-10 06:31:23 php bin/magento setup:static-content:Deploy -f
+  631  2019-05-10 06:32:17 php bin/magento cache:flush
+  632  2019-05-10 06:42:37 php bin/magento index:reindex
+  633  2019-05-10 06:43:06 php bin/magento cache:flush
+  634  2019-05-10 06:53:11 php bin/magento index:reindex
+  635  2019-05-10 06:53:43 php bin/magento cache:flush
+  636  2019-05-10 06:55:32 php bin/magento index:reindex
+  637  2019-05-10 06:56:01 php bin/magento cache:flush
+  638  2019-05-10 06:58:43 php bin/magento index:reindex
+  639  2019-05-10 06:59:10 php bin/magento cache:flush
+  640  2019-05-10 07:01:25 php bin/magento index:reindex
+  641  2019-05-10 07:01:51 php bin/magento cache:flush
+  642  2019-05-10 07:03:13 php bin/magento index:reindex
+  643  2019-05-10 07:03:40 php bin/magento cache:flush
+  644  2019-05-10 07:04:15 php bin/magento index:reindex
+  645  2019-05-10 07:04:59 php bin/magento cache:flush
+  646  2019-05-10 07:06:14 php bin/magento index:reindex
+  647  2019-05-10 07:06:41 php bin/magento cache:flush
+  648  2019-05-10 07:07:10 php bin/magento setup:upgrade
+  649  2019-05-10 08:09:06 php bin/magento index:reindex
+  650  2019-05-10 08:09:42 php bin/magento cache:flush
+  651  2019-05-10 08:13:57 php bin/magento deploy:mode:set product
+  652  2019-05-10 08:14:01 php bin/magento deploy:mode:set production
+  653  2019-05-10 08:16:02 php bin/magento cache:flush
+  654  2019-05-10 08:20:15 php bin/magento index:reindex
+  655  2019-05-10 11:41:05 cd /home/zirg/public_html/sandbox/
+  656  2019-05-10 11:41:12 php bin/magento index:reindex
+  657  2019-05-10 11:42:02 php bin/magento cache:flush
+  658  2019-05-10 11:46:38 php bin/magento index:reindex
+  659  2019-05-10 11:47:07 php bin/magento cache:flush
+  660  2019-05-10 11:57:20 php bin/magento index:reindex
+  661  2019-05-10 11:58:48 php bin/magento cache:flush
+  662  2019-05-10 12:13:13 php bin/magento index:reindex
+  663  2019-05-10 12:14:00 php bin/magento cache:flush
+  664  2019-05-11 00:19:46 php bin/magento index:reindex
+  665  2019-05-11 00:20:29 php bin/magento cache:flush
+  666  2019-05-11 00:44:33 php bin/magento index:reindex
+  667  2019-05-11 00:44:37 php bin/magento cache:flush
+  668  2019-05-13 00:13:44 php bin/magento index:reindex
+  669  2019-05-13 00:13:48 php bin/magento cache:flush
+  670  2019-05-13 00:30:07 reboot
+  671  2019-05-13 00:30:20 cd ..
+  672  2019-05-13 00:30:46 reboot
+  673  2019-05-12 22:18:42 cd public_html
+  674  2019-05-12 22:18:54 chmod -R 777 sandbox
+  675  2019-05-12 22:19:05 sudo chmod -R 777 sandbox
+  676  2019-05-12 22:19:15 sudo chmod -R 777 sandbox/*
+  677  2019-05-12 22:19:24 cd sandbox
+  678  2019-05-12 22:19:34 php bin/magento cache:flush
+  679  2019-05-12 22:20:12 php bin/magento indexer:reindex
+  680  2019-05-12 22:20:18 php bin/magento cache:flush
+  681  2019-05-12 22:23:54 php bin/magento module:show
+  682  2019-05-12 22:24:45 php bin/magento module:disable WeltPixel_backened
+  683  2019-05-12 22:24:52 php bin/magento module:disable WeltPixel_Backened
+  684  2019-05-12 22:25:15 php bin/magento module:disable WeltPixel_Backend
+  685  2019-05-12 22:25:30 php bin/magento module:disable WeltPixel_Lazyloading
+  686  2019-05-12 22:25:55 php bin/magento module:disable WeltPixel_LazyLoading
+  687  2019-05-12 22:25:59 php bin/magento module:disable WeltPixel_Backend
+  688  2019-05-12 22:26:15 php bin/magento cahce:flush
+  689  2019-05-12 22:26:42 php bin/magento cache:flush
+  690  2019-05-12 22:26:48 php bin/magento indexer:reindex
+  691  2019-05-12 22:39:39 php bin/magento cache:flush
+  692  2019-05-12 22:41:40 php bin/magento indexer:reindex
+  693  2019-05-12 22:42:07 php bin/magento cache:flush
+  694  2019-05-12 22:45:35 php bin/magento cahce:flush
+  695  2019-05-12 22:45:41 php bin/magento cache:flush
+  696  2019-05-12 22:46:04 php bin/magento module:ensable WeltPixel_Lazyloading
+  697  2019-05-12 22:46:12 php bin/magento module:enable WeltPixel_Lazyloading
+  698  2019-05-12 22:46:20 php bin/magento module:enable WeltPixel_LazyLoading
+  699  2019-05-12 22:46:32 php bin/magento module:enable WeltPixel_Backen
+  700  2019-05-12 22:46:36 php bin/magento module:enable WeltPixel_LazyLoading
+  701  2019-05-12 22:47:26 php bin/magento indexer:reindex
+  702  2019-05-12 22:47:53 php bin/magento cache:flush
+  703  2019-05-12 22:56:14 php bin/magento indexer:reindex
+  704  2019-05-12 22:56:36 php bin/magento cache:flush
+  705  2019-05-12 23:00:01 php bin/magento indexer:reindex
+  706  2019-05-12 23:00:23 php bin/magento cache:flush
+  707  2019-05-12 23:01:03 php bin/magento indexer:reindex
+  708  2019-05-12 23:03:25 php bin/magento cache:flush
+  709  2019-05-12 23:04:36 php bin/magento indexer:reindex
+  710  2019-05-12 23:04:59 php bin/magento cache:flush
+  711  2019-05-12 23:06:47 php bin/magento indexer:reindex
+  712  2019-05-12 23:08:28 php bin/magento cache:flush
+  713  2019-05-12 23:08:59 php bin/magento indexer:reindex
+  714  2019-05-12 23:10:50 php bin/magento cache:flush
+  715  2019-05-12 23:12:33 php bin/magento indexer:reindex
+  716  2019-05-12 23:13:00 php bin/magento cache:flush
+  717  2019-05-12 23:14:44 php bin/magento indexer:reindex
+  718  2019-05-12 23:15:11 php bin/magento cache:flush
+  719  2019-05-12 23:17:05 php bin/magento indexer:reindex
+  720  2019-05-12 23:17:33 php bin/magento cache:flush
+  721  2019-05-12 23:19:58 php bin/magento indexer:reindex
+  722  2019-05-12 23:20:26 php bin/magento cache:flush
+  723  2019-05-12 23:21:01 php bin/magento indexer:reindex
+  724  2019-05-12 23:21:30 php bin/magento cache:flush
+  725  2019-05-12 23:23:51 php bin/magento indexer:reindex
+  726  2019-05-12 23:24:44 php bin/magento cache:flush
+  727  2019-05-12 23:28:02 php bin/magento indexer:reindex
+  728  2019-05-12 23:28:30 php bin/magento cache:flush
+  729  2019-05-12 23:33:24 php bin/magento indexer:reindex
+  730  2019-05-12 23:33:34 php bin/magento cache:flush
+  731  2019-05-13 00:08:48 cd ..
+  732  2019-05-13 00:08:52 cd test
+  733  2019-05-13 00:09:09 grep -rl "My Reward Points"
+  734  2019-05-13 00:57:09 cd public_html
+  735  2019-05-13 00:57:12 cd test
+  736  2019-05-13 00:57:22 php bin/magento cache:flush
+  737  2019-05-13 03:53:43 rm -r generated/code/Pww/*
+  738  2019-05-13 03:56:35 php bin/magento cache:flush
+  739  2019-05-13 04:01:22 rm -r generated/code/Pww/*
+  740  2019-05-13 04:02:22 php bin/magento cache:flush
+  741  2019-05-13 04:19:20 rm -r generated/code/Pww/*
+  742  2019-05-13 04:19:23 php bin/magento cache:flush
+  743  2019-05-13 05:31:49 rm -r generated/code/Pww/*
+  744  2019-05-13 05:31:51 php bin/magento cache:flush
+  745  2019-05-13 05:50:09 rm -r generated/code/Pww/*
+  746  2019-05-13 05:50:11 php bin/magento cache:flush
+  747  2019-05-13 06:07:51 rm -r generated/code/Pww/*
+  748  2019-05-13 06:07:53 php bin/magento cache:flush
+  749  2019-05-13 06:15:26 rm -r generated/code/Pww/*
+  750  2019-05-13 06:15:28 php bin/magento cache:flush
+  751  2019-05-13 06:19:37 rm -r generated/code/Pww/*
+  752  2019-05-13 06:19:40 php bin/magento cache:flush
+  753  2019-05-13 06:21:32 rm -r generated/code/Pww/*
+  754  2019-05-13 06:21:34 php bin/magento cache:flush
+  755  2019-05-13 06:25:59 history
+
+  Zirg DB Commands :
+   1  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_AfterTwoProduct.sql
+    2  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/zirg_produ_AfterCategory.sql
+    3  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_AfterCategory_New.sql
+    4  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_BeforeUploadingProducts.sql
+    5  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/zirg_produ_BeforeUploadingProducts.sql
+    6  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_BeforeUploadingProducts.sql
+    7  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/zirg_produ_BeforeUploadingProducts.sql
+    8  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_AfterProductFile1.sql
+    9  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_16feb_1.sql
+   10  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_before_registry_16feb.sql
+   11  cd app/code/Magenest
+   12  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_before_orderidchange__17feb_1.sql
+   13  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_before_orderidchange__17feb_2.sql
+   14  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_AfterToken.sql
+   15  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_BeforeUpdatingAllProducts.sql
+   16  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_MainWithoutProducts.sql
+   17  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/zirg_produ_MainWithoutProducts.sql
+   18  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_MainWithoutProducts_Latest.sql
+   19  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/zirg_produ_MainAllProducts.sql
+   20  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_MainAllProducts_Latest.sql
+   21  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_purebackup_on_18feb2019.sql
+   22  mysqldump -u zg_produser -p zirglive226 > /root/backup2019/zirg226old__purebackup_on_18feb2019.sql
+   23  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_MainAllProducts_Latest_1.sql
+   24  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/z.sql
+   25  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_MainAllProducts_Latest_2.sql
+   26  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_MainAllProducts_Latest_3.sql
+   27  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_purebackup_before_starting_work_19feb2019.sql
+   28  mysql -u root -p
+   29  which my.cnf
+   30  cd /etc
+   31  ls
+   32  nano my.cnf
+   33  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_purebackup__20feb2019_beforequantityupdate.sql
+   34  mysql -u root -p
+   35  service mysql restart
+   36  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_MainAllProducts_Latest_20feb.sql
+   37  mysql -u zirg_produ_user
+   38  mysql -u zirg_produ_user -p
+   39  mysql -u Zirg_Produ_User -p
+   40  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_purebackup__21feb2019.sql
+   41  crontab -l
+   42  crontab -r
+   43  crontab -e
+   44  crontab -l
+   45  crontab -r
+   46  crontab -l
+   47  crontab -e
+   48  crontab -l
+   49  crontab -r
+   50  crontab -e
+   51  crontab -l
+   52  crontab -r
+   53  crontab -l
+   54  crontab -e
+   55  crontab -l
+   56  which mysql
+   57  which mysqldump
+   58  crontab -r
+   59  crontab -e
+   60  crontab -r
+   61  crontab -e
+   62  crontab -l
+   63  mysql -u Zirg_Produ_User
+   64  mysql -u Zirg_Produ_User -p
+   65  crontab -l
+   66  chmod -R 777 /var/cronzirg23
+   67  crontab -r
+   68  crontab -e
+   69  zip copysandbox.zip -y -r /home/zirg/public_html -x /home/zirg/public_html/zirg226/\* -x /home/zirg/public_html/zirg23test/\* -x /home/zirg/public_html/zirg23testsameserver/\*  -x /home/zirg/public_html/zirgold/\*
+   70  zip copysandbox.zip -y -r /home/zirg/public_html/* -x /home/zirg/public_html/zirg226/\* -x /home/zirg/public_html/zirg23test/\* -x /home/zirg/public_html/zirg23testsameserver/\*  -x /home/zirg/public_html/zirgold/\*
+   71  zip copysandbox.zip -y -r /home/zirg/public_html/ -x /home/zirg/public_html/zirg226/\* -x /home/zirg/public_html/zirg23test/\* -x /home/zirg/public_html/zirg23testsameserver/\*  -x /home/zirg/public_html/zirgold/\*
+   72  zip copysandbox.zip -y -r home/zirg/public_html/ -x /home/zirg/public_html/zirg226/\* -x /home/zirg/public_html/zirg23test/\* -x /home/zirg/public_html/zirg23testsameserver/\*  -x /home/zirg/public_html/zirgold/\*
+   73  zip -r copysandbox.zip -y  home/zirg/public_html/ -x /home/zirg/public_html/zirg226/\* -x /home/zirg/public_html/zirg23test/\* -x /home/zirg/public_html/zirg23testsameserver/\*  -x /home/zirg/public_html/zirgold/\*
+   74  zip -r copysandbox.zip -y  /home/zirg/public_html/ -x /home/zirg/public_html/zirg226/\* -x /home/zirg/public_html/zirg23test/\* -x /home/zirg/public_html/zirg23testsameserver/\*  -x /home/zirg/public_html/zirgold/\*
+   75  zip -r copysandbox.zip   /home/zirg/public_html/ -x /home/zirg/public_html/zirg226/\* -x /home/zirg/public_html/zirg23test/\* -x /home/zirg/public_html/zirg23testsameserver/\*  -x /home/zirg/public_html/zirgold/\*
+   76  mysql -u rooot -p
+   77  mysql -u root -p
+   78  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_purebackup_for_sandbox.sql
+   79  mysql -u Zirg_Produ_User -p zirg_produ_sandbox < /root/backup2019/zirg_produ_purebackup_for_sandbox.sql
+   80  mysql -u Zirg_Produ_Password
+   81  mysql -u Zirg_Produ_Password -p
+   82  mysql -u Zirg_Produ_User -p
+   83  mysql -u Zirg_Produ_User -p zirg_produ_sandbox < /root/backupsandbox2019/zirg_produ_sandbox_22feb2019.sql
+   84  mysqldump -u Zirg_Produ_User -p zirg_produ_sandbox > /root/backup2019/zirg_produ_sandbox_22feb2019.sql
+   85  mysqldump -u Zirg_Produ_User -p zirg_produ_sandbox > /root/backupsandbox2019/zirg_produ_sandbox_22feb2019.sql
+   86  mysql -u Zirg_Produ_Password
+   87  mysql -u Zirg_Produ_Password -p
+   88  mysql -u Zirg_Produ_User -p
+   89  mysql -u Zirg_Produ_User
+   90  mysql -u Zirg_Produ_User -p
+   91  mysql -u root -p
+   92  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backupsandbox2019/zirg_produ_beforesmtp__22feb2019.sql
+   93  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_beforesmtp__22feb2019.sql
+   94  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_aftersmtp__22feb2019.sql
+   95  mysqldump -u Zirg_Sd_User -p zirg_produ_sandbox > /root/backupsandbox2019/zirg_produ_aftersmtp__22feb2019.sql
+   96  grep -rl "layout.phtml" /home/zirg/public
+   97  grep -rl "layout.phtml" /home/zirg/public_html/sandbox/app
+   98  mysql -u zirg_produ_user -p
+   99  mysql -u Zirg_Produ_User -p
+  100  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_saurabh.sql
+  101  mysql - root -p
+  102  mysql -u root -p
+  103  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_saurabh_0223.sql
+  104  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_saurabh1_0223.sql
+  105  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_saurabh2_0223.sql
+  106  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_changing_gift_registry_27feb2018.sgl
+  107  mysql -u Zirg_Produ_User\
+  108  mysql -u Zirg_Produ_User -p
+  109  mysql -u root -p
+  110  cd public_html
+  111  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_noProducts_27Feb2018.sgl
+  112  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_noProducts_27Feb2018.sql
+  113  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_noProducts_1_27Feb2018.sql
+  114  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_noProducts_2_27Feb2018.sql
+  115  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_noProducts_3_27Feb2018.sql
+  116  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_no_Products.sql
+  117  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/zirg_produ_final_no_Products.sql
+  118  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_no_Products_afterIndexer.sql
+  119  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/zirg_produ_final_no_Products_afterIndexer.sql
+  120  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_12000_Products.sql
+  121  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_23030_Products.sql
+  122  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_23030_Products_afterIndexer.sql
+  123  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_beforeLazyLoading.sql
+  124  mysql --version
+  125  mysql -u root -p
+  126  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_5march.sql
+  127  ls
+  128  bash deployVeniaSampleData.sh
+  129  mysql -u root -p
+  130  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_7march.sql
+  131  mysqldump -u Zirg_Produ_User -p
+  132  mysql -u Zirg_Produ_User -p
+  133  mysql -u root -p
+  134  mysql -u demo -p
+  135  mysql -u root -p
+  136  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_11march.sql
+  137  cd /var/cronzirg23/
+  138  ls
+  139  mv MySQLDB_20190311.sql? saurabh.sql
+  140  mv MySQLDB_20190310.sql? sethi.sql
+  141  cd ..
+  142  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/zirg_produ_final_10march.sql
+  143  mysql -u root -p
+  144  mysql -u SR_Produ_User -p
+  145  mysql -u root -p
+  146  mysql -u SR_Produ_User -p
+  147  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_14march.sql
+  148  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_14march_1.sql
+  149  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/zirg_produ_final_14march.sql
+  150  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_15march.sql
+  151  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_15march_1.sql
+  152  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_15march_2.sql
+  153  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_15march_3.sql
+  154  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/zirg_produ_final_15march_3.sql
+  155  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_15march_final.sql
+  156  df
+  157  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_final_15march_final1.sql
+  158  pwd
+  159  crontab -l
+  160  mysql -u root
+  161  mysql -u root -p
+  162  mysql -u Swish_Produ_User -p
+  163  mysql -u root -p
+  164   CREATE USER 'Ms__Produ_User'@'%' IDENTIFIED BY 'Ms__Produ_Password';
+  165  mysql -u root -p
+  166  mysqldump -u root -p zirg_produ > /root/backup2019/dbbackupzirgprodu16march.sql
+  167  cd backup2019
+  168  ls
+  169  mysql -u root -p
+  170  mysql -u root -p saunitech_produ < /root/backup2019/dbbackupzirgprodu16march.sql
+  171  mysqldump -u root -p saunitech_produ > /root/backup2019/dbbackupsaunitechprodu16march.sql
+  172  mysqldump -u root -p zirg_produ > /root/backup2019/dbbackupbefore_product_delete_18march2019.sql
+  173  cd /root/backup2019
+  174  ls
+  175  mysqldump -u root -p zirg_produ > /root/backup2019/dbbackupafter_product_delete_18march2019.sql
+  176  ls
+  177  mysqldump -u root -p zirg_produ > /root/backup2019/dbbackupafter_deleting_attributes_18march2019.sql
+  178  mysqldump -u root -p zirg_produ > /root/backup2019/dbbackupafter_adding_attributes_18march2019.sql
+  179  mysqldump -u root -p saunitech_produ > /root/backup2019/dbbackupafter_adding_attributes_18march2019_1.sql
+  180  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/dbbackupafter_adding_attributes_18march2019_1.sql
+  181  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/dbbackupafter_adding_attributes_18march2019_1.sql
+  182  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/dbbackupbefore_product_delete_18march2019.sql
+  183  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/dbbackupfresh__25march2019_1.sql
+  184  cd public_html
+  185  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/dbbackupbeforedeletingproduct__26march2019_1.sql
+  186  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/dbbackupbeforedeletingproduct__26march2019_1.sql
+  187  crontab -l
+  188  cd /var/cronzirg23
+  189  ls
+  190  cp MySQLDB_20190325.sql?
+  191  MySQLDB_20190302.sql?  MySQLDB_20190315.sql?  MySQLdump2.sh
+  192  [root@10-64-1-120 cronzirg23]# cp ^C
+  193  MySQLDB_20190325.sql?
+  194  MySQLDB_20190302.sql?  MySQLDB_20190315.sql?  MySQLdump2.sh
+  195  [root@10-64-1-120 cronzirg23]# cp ^C
+  196  MySQLDB_20190325.sql?
+  197  cp MySQLDB_20190325.sql?
+  198  mv MySQLDB_20190325.sql?
+  199  mv MySQLDB_20190325.sql? MySQLDB_20190325.sql?
+  200  mv MySQLDB_20190325.sql? MySQLDB_20190325.sql
+  201  ls
+  202  cp MySQLDB_20190325.sql /root/backup2019/MySQLDB_20190325.sql
+  203  cd /root/backup2019
+  204  ls
+  205  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/MySQLDB_20190325.sql
+  206  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/dbbackup_before_deleting_attributes__26march2019_1.sql
+  207  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/dbbackup_after_deleting_attributes_gender__26march2019_1.sql
+  208  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/dbbackup_after_deleting_attributes__26march2019_1.sql
+  209  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/dbbackup_after_creating_attributes_gender__26march2019_1.sql
+  210  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/dbbackup_after_creating_attributes__26march2019_1.sql
+  211  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/dbbackup_before_deleting_attributes__26march2019_1.sql
+  212  reboot
+  213  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/dbbackup_for_massdelete_issue_3pm__26march2019_1.sql
+  214  mv MySQLDB_20190319.sql? MySQLDB_20190319.sql
+  215  cd /var/cronzirg23
+  216  mv MySQLDB_20190319.sql? MySQLDB_20190319.sql
+  217  cp MySQLDB_20190319.sql /root/backup2019/MySQLDB_20190319.sql
+  218  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/MySQLDB_20190319.sql
+  219  mv MySQLDB_20190315.sql? MySQLDB_20190315.sql
+  220  cp MySQLDB_20190315.sql /root/backup2019/MySQLDB_20190315.sql
+  221  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/MySQLDB_20190315.sql
+  222  mv MySQLDB_20190309.sql? MySQLDB_20190309.sql
+  223  cp MySQLDB_20190309.sql /root/backup2019/MySQLDB_20190309.sql
+  224  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/MySQLDB_20190309.sql
+  225  mv MySQLDB_20190301.sql? MySQLDB_20190301.sql
+  226  cp MySQLDB_20190301.sql /root/backup2019/MySQLDB_20190301.sql
+  227  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/MySQLDB_20190301.sql
+  228  mv MySQLDB_20190324.sql? MySQLDB_20190324.sql
+  229  cp MySQLDB_20190324.sql /root/backup2019/MySQLDB_20190324.sql
+  230  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/MySQLDB_20190324.sql
+  231  which php.ini
+  232  mysqldump -u saunitech_produ -p Ms_Produ_User > /root/backup2019/dbbackup_for_saunitechprodu_26march2019_1.sql
+  233  mysqldump -u Ms_Produ_User -p saunitech_produ > /root/backup2019/dbbackup_for_saunitechprodu_26march2019_1.sql
+  234  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/dbbackup_for_saunitechprodu_26march2019_1.sql
+  235  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/MySQLDB_20190324.sql
+  236  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/dbbackup_sandbox.sql
+  237  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/MySQLDB_20190324.sql
+  238  php bin/magento cache:flush
+  239  mysql -u root -p
+  240  mysql -u Ms_Produ_User -p sandbox_test < /root/backupsandbox2019/MySQLDB_20190324.sql
+  241  mysql -u root -p sandbox_test < /root/backupsandbox2019/MySQLDB_20190324.sql
+  242  mysql -u Ms_Produ_User -p
+  243  mysql -u root -p
+  244  mysql -u root -p sandbox_test < /root/backupsandbox2019/MySQLDB_20190324.sql
+  245  mysqldump -u saunitech_produ -p Ms_Produ_User > /root/backup2019/dbbackup_for_saunitechprodu_27march2019_1.sql
+  246  mysql -u Ms_Produ_User -p
+  247  mysqldump -u Ms_Produ_User -p saunitech_produ > /root/backupsandbox2019/dbbackup27march2019.sql
+  248  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/dbbackup_27march2019_1.sql
+  249  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/dbbackup_27march2019_2.sql
+  250  which mydql
+  251  which mysql
+  252  cd /etc
+  253  ls
+  254  vi /etc/my.cnf
+  255  service mysqld restart
+  256  mysql -u root -p
+  257  1
+  258  vi /etc/my.cnf
+  259  service mysqld restart
+  260  cat /sys/block/sda/queue/rotational
+  261  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/dbbackup_28march2019_1.sql
+  262  mysql -u root -p
+  263  mysqldump -u Ms_Produ_User -p saunitech_produ > /root/backupsandbox2019/dbbackup_28march2019_1.sql
+  264  mysql -u Ms_Produ_User -p saunitech_produ < /root/backupsandbox2019/db_saurabh.sql
+  265  mysql -y Ms_Produ_User -p
+  266  mysql -u Ms_Produ_User -p
+  267  mysql -u root -p
+  268  vi /etc/my.cnf
+  269  service mysql restart
+  270  vi /etc/my.cnf
+  271  service mysql restart
+  272  vi /etc/my.cnf
+  273  service mysql restart
+  274  vi /etc/my.cnf
+  275  service mysql restart
+  276  mysqld --help --verbose
+  277  mysql --help | grep "Default options" -A 1
+  278  vi /etc/my.cnf
+  279  vi /etc/mysql/my.cnf
+  280  cd /etc/mysql
+  281  cd mysql
+  282  vi /etc/mysql/my.cnf
+  283  rm -r /var/tmp/my.cnf.swp
+  284  vi /etc/my.cnf
+  285  vi /etc/mysql/my.cnf
+  286  rm -r /var/tmp/my.cnf.swp
+  287  sudo rm -r /var/tmp/my
+  288  vi /etc/mysql/my.cnf
+  289  rm -r /var/tmp/my.cnf.swp
+  290  sudo rm -r /var/tmp/my.cnf.swp
+  291  sudo vi /etc/mysql/my.cnf
+  292  sudo rm -r /var/tmp/my.cnf.swp
+  293  mysql --help | grep "Default options" -A 1
+  294  vi /etc/my.cnf
+  295  sudo vi /usr/etc/my.cnf
+  296  service mysql restart
+  297  vi /etc/my.cnf
+  298  service mysql restart
+  299  vi /usr/etc/my.cnf
+  300  service mysql restart
+  301  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/db_saurabh.sql
+  302  mysql -u MS_Produ_User -p saunitech_produ < /root/backupsandbox2019/db_saurabh.sql
+  303  mysql -u Ms_Produ_User -p saunitech_produ < /root/backupsandbox2019/db_saurabh.sql
+  304  mysql -u root -p saunitech_produ < /root/backupsandbox2019/db_saurabh.sql
+  305  cd public_html
+  306  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backupsandbox2019/db_saurabh_2.sql
+  307  mysq -u root -p saunitech_produ < /root/backupsandbox2019/db_saurabh_2.sql
+  308  mysql -u root -p saunitech_produ < /root/backupsandbox2019/db_saurabh_2.sql
+  309  which my.cnf
+  310  vi /etc/my.cnf
+  311  service mysql restart
+  312  cd /etc/mysql
+  313  mysqld --help --verbose
+  314  clear
+  315  mysqld --help --verbose
+  316  mysql --help | grep "Default options" -A 1
+  317  vi /usr/etc/my.cnf
+  318  service mysql restart
+  319  vi /etc/my.cnf
+  320  service mysql restart
+  321  rebooot
+  322  reboot
+  323  service mysql restart
+  324  vi /usr/etc/my.cnf
+  325  service mysql restart
+  326  mysql --help | grep "Default options" -A 1
+  327  vi ~/.my.cnf
+  328  service mysql restart
+  329  vi ~/.my.cnf
+  330  vi /etc/mysql/my.cnf
+  331  sudo vi /etc/mysql/my.cnf
+  332  find / -name my.cnf
+  333  sudo vi ~/.my.cnf
+  334  which mysqld
+  335  vi /usr/etc/my.cnf
+  336  service mysql restart
+  337  vi /usr/etc/my.cnf
+  338  service mysql restart
+  339  mysql -u root -p
+  340  vi /etc/my.cnf
+  341  service mysql restart
+  342  mysql -u root -p
+  343  vi /etc/my.cnf
+  344  service mysql restart
+  345  mysql -u root -p
+  346  vi /etc/my.cnf
+  347  service mysql restart
+  348  mysql -u root -p
+  349  use information_schema;
+  350  mysql -u root -p
+  351  vi /etc/my.cnf
+  352  mysql -u root -p
+  353  service mysql restart
+  354  mysql -u root -p
+  355  vi /etc/my.cnf
+  356  mysql -u root -p
+  357  service mysql restart
+  358  mysql -u root -p
+  359  vi /etc/my.cnf
+  360  service mysql restart
+  361  mysql -u root -p
+  362  vi /etc/my.cnf
+  363  vi ~/.my.cnf
+  364  mysql -u root -p
+  365  vi ~/.my.cnf
+  366  service mysql restart
+  367  vi ~/.my.cnf
+  368  mysql -u root -p
+  369  vi ~/.my.cnf
+  370  rm -r /root/.my.cnf.swp
+  371  sudo rm -r /root/.my.cnf.swp
+  372  vi ~/.my.cnf
+  373  mysql -u root -p
+  374  vi ~/.my.cnf
+  375  mysql -u root -p
+  376  mysqldump --all-databases > dump.sql
+  377  mysqldump -u root -p --all-databases > /root/backup2019/dump.sql
+  378  vi /etc/my.cnf
+  379  rm -r  /etc/my.cnf.swp
+  380  vi  /etc/my.cnf
+  381  service mysql restart
+  382  mysqldump -u root -p --all-databases > /root/backup2019/dump_2.sql
+  383  mysql -u root -p --all-databases < /root/backup2019/dump_2.sql
+  384  mysql -u root -p
+  385  mysqlcheck --repair --databases saunitech_produ ...
+  386  mysql -u root -p
+  387  mysqlcheck --repair --all-databases
+  388  mysqlcheck -u root -p --repair --all-databases
+  389  mysql -u root -p
+  390  mysqld --no-defaults --verbose --help
+  391  --keep-generated
+  392  SHOW VARIABLES LIKE 'ft_min_word_len';
+  393  mysql -u root -p
+  394  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backupsandbox2019/db_fresh2april2019.sql
+  395  cd /root/backup2019
+  396  cd ..
+  397  cd backupsandbox2019/db_fresh2april2019.sql
+  398  Enter password:
+  399  cd backupsandbox2019/db_fresh2april2019.sql
+  400  Enter password:
+  401  cd backupsandbox2019
+  402  ls
+  403  cd ..
+  404  mysql -u root -p
+  405  mysqldump -u Zg_Test_User -p zirg_test > /root/backupsandbox2019/db_fresh2april2019_change.sql
+  406  mysql -u Zg_Test_User -p
+  407  mysql -u Zg_Test_User -p zirg_test < /root/backupsandbox2019/db_fresh2april2019_change.sql
+  408  mysql -u Zg_Test_User -p
+  409  mysql -u Zg_Test_User -p zirg_test < /root/backupsandbox2019/db_fresh2april2019_change.sql
+  410  mysql -u root -p zirg_test < /root/backupsandbox2019/db_fresh2april2019_change.sql
+  411  date
+  412  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backupsandbox2019/db_fresh2april2019_before_paypal.sql
+  413  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/db_fresh2april2019_before_paypal.sql
+  414  pwd
+  415  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backupsandbox2019/db_April2_2019.sql
+  416  mysql -u Zirg_Produ_User -p zirg_produ < /root/backupsandbox2019/db_fresh2april2019.sql
+  417  mysql -u root -p
+  418  vi /etc/my.cnf
+  419  service mysql restart
+  420  mysql -u root -p
+  421  reboot
+  422  mysql -u root -p
+  423  vi /etc/my.cnf
+  424  mysql -u Zirg_Produ_User -p zirg_produ < /root/backup2019/db_fresh8april2019_before_update.sql
+  425  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/db_fresh8april2019_before_update.sql
+  426   mysql -u Ms_Produ_User -p saunitech_produ < /root/backupsandbox2019/db_fresh8april2019_before_update_sandbox.sql
+  427   mysql -u root -p saunitech_produ < /root/backupsandbox2019/db_fresh8april2019_before_update_sandbox.sql
+  428  mysql -u root -p
+  429  cd public_html
+  430  mysql -u root -p
+  431  mysql -u M23zirg -p
+  432  mysql -u root -p
+  433  mysql -u m23user -p
+  434  mysql -u root -p
+  435  mysql -u m231user -p
+  436  mysql -u root -p
+  437  mysql -u pww_jetuser -p
+  438  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/db_fresh12april2019.sql
+  439  mysqldump -u m231zirg -p m231zirg > /root/backup2019/db_fresh12april2019_231.sql
+  440  mysqldump -u m231db -p m231user > /root/backup2019/db_fresh12april2019_231.sql
+  441  mysql -u m231user -p
+  442  mysqldump -u m231zirg -p m231db > /root/backup2019/db_fresh12april2019_231.sql
+  443  mysqldump -u m231user -p m231db > /root/backup2019/db_fresh12april2019_231.sql
+  444  mysql -u m231user -p m231db < /root/backup2019/db_fresh12april2019_231_change_cms.sql
+  445  mysql -u m231user -p m231db < /root/backup2019/db_fresh12april2019_231.sql
+  446  mysqldump -u m231user -p m231zirg > /root/mage231_backup/m231backup_before_adding_product_12april2019.sql
+  447  mysqldump -u m231user -p m231db > /root/mage231_backup/m231backup_before_adding_product_12april2019.sql
+  448  mysqldump -u m231user -p m231db > /root/mage231_backup/m231backup_before_adding_product_12april2019_2.sql
+  449  mysql -u m231user -p m231db < /root/mage231_backup/m231backup_before_adding_product_12april2019_.sql
+  450  mysqldump -u m231user -p m231db > /root/mage231_backup/m231backup_before_adding_product_12april2019_3.sql
+  451  mysqldump -u m231user -p m231db > /root/mage231_backup/m231backup_before_adding_product_12april2019_4.sql
+  452  reboot
+  453  cd public_html
+  454  mysql -u root -p
+  455  restart
+  456  reboot
+  457  date()
+  458  date
+  459  mysql -u root -p
+  460  /etc/init.d/mysqld restart
+  461  which mysqld
+  462  /usr/sbin/mysqld restart
+  463  mysql -u root -p
+  464  rebbot
+  465  reboot
+  466  mysql -u root -p
+  467  service mysql restart
+  468  mysql -u root -p
+  469  service mysql restart
+  470  mysql -u root -p
+  471  service mysql restart
+  472  mysql -u root -p
+  473  which my.cnf
+  474  grep -rl "sort_buffer_size" /*
+  475  vi /etc/my.cnf
+  476  mysql -u root -p
+  477  grep -rl "max_connections" /*
+  478  vi /etc/my.cnf
+  479  service mysql restart
+  480  mysql -u root -p
+  481  vi /etc/my.cnf
+  482  mysql -u root -p
+  483  service mysql restart
+  484  sudo vi /etc/my.cnf
+  485  service mysql restart
+  486  mysql -u root -p
+  487  sudo vi /etc/my.cnf
+  488  service mysql restart
+  489  mysql -u root -p
+  490  sudo vi /etc/my.cnf
+  491  service mysql restart
+  492  mysql -u root -p
+  493  sudo vi /etc/my.cnf
+  494  service mysql restart
+  495  mysql -u root -p
+  496  service mysql restart
+  497  mysql -u root -p
+  498  sudo vi /etc/my.cnf
+  499  mysql -u root -p
+  500  service mysql restart
+  501  mysql -u root -p
+  502  service mysql restart
+  503  mysql -u root -p
+  504  mysqldump -u m231user -p m231db > /root/mage231_backup/m231backup_before_adding_product_17april2019_3.sql
+  505  cd /root/mage231_backup
+  506  ls
+  507  mysqldump -u m231user -p m231db > /root/mage231_backup/m231backup_before_adding_product_18april2019_3.sql
+  508  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/db_fresh18april2019.sql
+  509  yum install mariadb* -y
+  510  reboot
+  511  systemctl enable mariadb
+  512  systemctl start mariadb
+  513  systemctl status mariadb
+  514  systemctl disable mysql
+  515  systemctl enable mariadb
+  516  systemctl enable mysql
+  517  mysql -u root -p
+  518  mariadb
+  519  yum install mariadb* -y
+  520  mariadb -u root -p
+  521  ss -tulpn | grep -w 3306
+  522  mysqldump -u root -p --all-databases > BackupDBS.sql
+  523  service mysqld stop
+  524  cp /etc/my.cnf /tmp/
+  525  yum remove mysql*
+  526  sudo yum remove mysql*
+  527  service mysqld start
+  528  yum remove mysql mysql-server
+  529  mv /var/lib/mysql /var/lib/old_backup_mysql
+  530  cat > /etc/yum.repos.d/MariaDB.repo <<"EOF"
+  531  [mariadb]
+  532  name = MariaDB
+  533  baseurl = http://yum.mariadb.org/10.2/centos7-amd64
+  534  gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+  535  gpgcheck=1
+  536  EOF
+  537  yum update -y
+  538  yum install MariaDB-server MariaDB-client -y
+  539  systemctl enable mariadb
+  540  systemctl start mariadb
+  541  service mysql status
+  542  service mariadb status
+  543  mysql_secure_installation
+  544  reboot
+  545  systemctl enable mariadb
+  546  cp /tmp/my.cnf /etc/my.cnf
+  547  systemctl enable mariadb
+  548  service mariadb status
+  549  yum repolist
+  550  yum install MariaDB-server MariaDB-client -y
+  551  systemctl enable mariadb
+  552  sudo systemctl enable mariadb
+  553  mysql -u root -p
+  554  yum remove mysql mysql-server
+  555  yum remove mysql* mysql-server
+  556  service mariadb status
+  557  cd /var/cronzirg23
+  558  ls
+  559  mv MySQLDB_20190418.sql? MySQLDB_20190418.sql
+  560  ls
+  561  cd
+  562  cp /tmp/my.cnf /etc/my.cnf
+  563  service mariadb status
+  564  sudo yum install maxscale
+  565  sudo yum install percona-xtrabackup-24
+  566  systemctl enable mariadb
+  567  yum history list all
+  568  yum history info
+  569  [mariadb]
+  570  name = MariaDB
+  571  baseurl = http://yum.mariadb.org/10.2/centos7-amd64
+  572  gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+  573  cat >[mariadb]
+  574  cat > /etc/yum.repos.d/MariaDB.repo <<"EOF"
+  575  [mariadb]
+  576  name = MariaDB
+  577  baseurl = http://yum.mariadb.org/10.2/centos7-amd64
+  578  gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+  579  gpgcheck=1
+  580  EOF
+  581  yum update -y
+  582  sudo yum groupinstall mariadb*
+  583  systemctl start mariadb.services
+  584  yum info mariadb-server
+  585  grep: journalctl -xe|grep 'mysqld.*errno'
+  586  yum install grep
+  587  grep: journalctl -xe|grep 'mysqld.*errno'
+  588  sudo grep: journalctl -xe|grep 'mysqld.*errno'
+  589  systemctl start mariadb.service
+  590  yum info mariadb-server
+  591  sudo chkconfig mysql on
+  592  sudo yum  groupuninstallinstall mariadb*
+  593  sudo yum  groupuninstall mariadb*
+  594  sudo yum  uninstall mariadb*
+  595  yum uninstall MariaDB-server MariaDB-client -y
+  596  yum uninstall MariaDB-server MariaDB-client
+  597  yum remove mariadb mariadb-server
+  598  yum remove mariadb*
+  599  yum reinstall MariaDB-server
+  600  yum install MariaDB-server
+  601  yum install MariaDB
+  602  systemctl enable mariadb
+  603  service mariadb status
+  604  yum list installed | grep mysql
+  605  yum install yum-plugin-remove-with-leaves
+  606  yum remove mysql-server --remove-leaves
+  607  yum remove mariadb mariadb-server
+  608  rm -rf /var/lib/mysq
+  609  rm /etc/my.cnf
+  610  rpm -qa | grep mariadb
+  611  rpm -q mariadb-server
+  612  cd /etc
+  613  ls
+  614  cd /etc/yum.repos.d
+  615  ls
+  616  ls MariaDB.repo
+  617  vi MariaDB.repo
+  618  rm mysql-community.repo
+  619  ls
+  620  rm -r mysql-community.repo
+  621  ls
+  622  sudo mysql-community.repo
+  623  sudo rm -r mysql-community.repo
+  624  sudo rm -r mysql-community-source.repo
+  625  cd ..
+  626  yum updatcd
+  627  cd
+  628  yum update -y
+  629  yum install MariaDB-server MariaDB-client -y
+  630  systemctl enable mariadb
+  631  systemctl start mariadb
+  632  service mysql status
+  633  yum remove mysql
+  634  yum clean all
+  635  systemctl start mariadb
+  636  systemctl enable mariadb
+  637  yum info mariadb-server
+  638  yum install mariadb-server
+  639  yum info mariadb-server
+  640  pm -q mariadb-server
+  641  rpm -q mariadb-server
+  642  yum install mariadb-server
+  643  cd  /var/log/mariadb
+  644  yum install mysql
+  645  yum list installed | grep mariadb
+  646  yum install mariadb-server
+  647  systemctl start mariadb
+  648  service mariadb start
+  649  rpm -qa | grep mariadb
+  650  sudo yum -y install mariadb-server
+  651  sudo systemctl start mariadb
+  652  yum list installed | grep mysql
+  653  mysqld --print-defaults
+  654  yum remove mysql mysql-server
+  655  yum remove mysql
+  656  yum remove  mysql-server
+  657  mv /var/lib/mysql /var/lib/old_backup_mysql
+  658  yum remove mysql55-lib
+  659  yum remove mysql56-lib
+  660  rpm -qa | grep mysql
+  661  yum remove mysql-community-embedded-devel-5.6.43-2.el7.x86_64
+  662  yum remove mysql-community-libs-5.6.43-2.el7.x86_64
+  663  yum remove mysql-community-common-5.6.43-2.el7.x86_64
+  664  yum remove mysql-community-embedded-5.6.43-2.el7.x86_64
+  665  yum remove mysql-community-devel-5.6.43-2.el7.x86_64
+  666  yum remove mysql-community-release-el7-5.noarch
+  667  rpm -qa | grep mysql
+  668  yum clean all
+  669  rpm -qa | grep maria
+  670  cd /etc
+  671  ls
+  672  vi my.cnf
+  673  rm -r my.cnf
+  674  yum remove mariadb mariadb-server
+  675  rm -rf /var/lib/mysql
+  676  rm ~/.my.cnf
+  677  rpm -qa | grep mysql
+  678  yum remove mysql mysql-server
+  679  mv /var/lib/mysql
+  680  rm -rf /var/lib/mysql
+  681  rm -rf /etc/my.cnf
+  682  yum clean all
+  683  yum remove yum-plugin-remove-with-leaves
+  684  yum list installed | grep mariadb
+  685  reboot
+  686  cd /etc/yum.repos.d
+  687  ls
+  688  touch MariaDB.repo
+  689  vi MariaDB.repo
+  690  ls
+  691  vi MariaDB.repo
+  692  ls
+  693  cd
+  694  yum update
+  695  yum upgrade
+  696  yum install MariaDB-server MariaDB-client -y
+  697  systemctl start mariadb
+  698  systemctl enable mariadb
+  699  systemctl status mariadb
+  700  mysql_secure_installation
+  701  mysql -u root -p
+  702  ls
+  703  mysql –u root –p < BackupDBS.sql
+  704  mysql -u root -p
+  705  ls
+  706  cd /var/cronzirg23
+  707  ls
+  708  cd
+  709  mysql -u Zirg_Produ_Password -p zirg_produ < /var/cronzirg23/MySQLDB_20190418.sql
+  710  mysql -u Zirg_Produ_User -p zirg_produ < /var/cronzirg23/MySQLDB_20190418.sql
+  711  mysql -u root -p
+  712  mysql -u m231user -p m231db < /root/mage231_backup/m231backup_before_adding_product_18april2019_3.sql
+  713   rpm -qa | grep mysql
+  714  cd vi /etc/yum.repos.d/
+  715  cd  /etc/yum.repos.d/
+  716  ls
+  717  vi MariaDb.repo
+  718  rm -r MariaDB.repo
+  719  ls
+  720  rm -r MariaDb.repo
+  721  ls
+  722  vi /etc/yum.repos.d/MariaDB.repo
+  723  mysql -u root -p
+  724  ls
+  725  pwd
+  726   mysqldump -u Zirg_Produ_Password -p zirg_produ < /root/backup2019/MySQLDB_26april2019.sql
+  727   mysqldump -u Zirg_Produ_Password -p zirg_produ > /root/backup2019/MySQLDB_26april2019.sql
+  728   mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/MySQLDB_26april2019.sql
+  729   mysql -u demo -p m23test < /root/backupsandbox2019/MySQLDB_26april2019.sql
+  730  mysql -u demo -p m23test < /root/backupsandbox2019/MySQLDB_26april2019.sql
+  731  mysql -u root -p m23test < /root/backupsandbox2019/MySQLDB_26april2019.sql
+  732  mysql -u Zirg_Produ_User -p
+  733  mysql -u root -p
+  734  mysqldump -u demo -p m23test > /root/backupsandbox2019/MySQLDB_27april2019_main.sql
+  735  mysql -u demo -p m23test < /root/backupsandbox2019/MySQLDB_27april2019.sql
+  736  mysql --user=root mysql
+  737  mysql --user=root mysql -p
+  738  mysql -u Zirg_Produ_User -p Zirg_Produ < /root/backup2019/zirg_prod_April_27_2019.sql
+  739  mysqldump -u Zirg_Produ_User -p Zirg_Produ > /root/backup2019/zirg_prod_April_27_2019.sql
+  740  mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_prod_April_27_2019.sql
+  741  ls
+  742   mysqldump -u m231user -p m231db > /root/mage231_backup/MySQLDB_27april2019.sql
+  743  mysql -u root -p
+  744  mysql -u root -p m231test < /root/backupsandbox2019/MySQLDB_27april2019.sql
+  745  mysql -u demo  -p m231test < /root/backupsandbox2019/MySQLDB_27april2019.sql
+  746  mysql -u root -p
+  747  mysql -u demo  -p m231test < /root/backupsandbox2019/MySQLDB_27april2019.sql
+  748  mysql -u root -p
+  749  mysql -u demo  -p m231test < /root/backupsandbox2019/MySQLDB_27april2019.sql
+  750  mysql -u root -p
+  751  mysql -u demo  -p m231test < /root/backupsandbox2019/MySQLDB_27april2019.sql
+  752  GRANT SUPER ON m231test TO demo@'%' IDENTIFIED BY 'password@123P';
+  753   mysqldump -u m231user -p m231db > /root/backup2019beforedeletinddb/m231__27april2019.sql
+  754   mysqldump -u m231user -p m231db > /root/backup2019beforedeletingdb/m231__27april2019.sql
+  755   mysqldump -u demo -p m231test > /root/backup2019beforedeletingdb/test__27april2019.sql
+  756   mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019beforedeletingdb/zirg_produ_27april2019.sql
+  757  history
+  758   mysqldump -u demo -p m231test > /root/m231test/test__27april2019_1.sql
+  759   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_1.sql
+  760  mysql -u demo  -p m231test < /root/backupsandbox2019/MySQLDB_27april2019.sql
+  761  mysql -u root  -p m231test < /root/backupsandbox2019/MySQLDB_27april2019.sql
+  762   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_pure.sql
+  763  mysql -u root -p m231test < /root/m231testbackup/test__27april2019_pure.sql
+  764   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_1.sql
+  765   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_2.sql
+  766   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_3.sql
+  767   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_4.sql
+  768   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_5.sql
+  769   mysql -u demo -p m231test < /root/m231testbackup/test__27april2019_afterfile_5.sql
+  770   mysql -u root -p m231test < /root/m231testbackup/test__27april2019_afterfile_5.sql
+  771   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_7.sql
+  772   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_8.sql
+  773   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_9.sql
+  774   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_10.sql
+  775   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_11.sql
+  776   mysql -u root -p m231test < /root/m231testbackup/test__27april2019_afterfile_11.sql
+  777   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_13.sql
+  778   mysql -u root -p m231test < /root/m231testbackup/test__27april2019_afterfile_14.sql
+  779   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_14.sql
+  780   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_15.sql
+  781   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_16.sql
+  782   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_17.sql
+  783   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_18.sql
+  784   mysql -u root -p m231test < /root/m231testbackup/test__27april2019_afterfile_18.sql
+  785   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_22.sql
+  786   mysql -u root -p m231test < /root/m231testbackup/test__27april2019_afterfile_22.sql
+  787   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_25.sql
+  788   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_26.sql
+  789   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_27.sql
+  790   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_28.sql
+  791   mysql -u root -p m231test < /root/m231testbackup/test__27april2019_afterfile_28.sql
+  792   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_30.sql
+  793   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_31.sql
+  794   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_32.sql
+  795   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_33.sql
+  796   mysql -u root -p m231test < /root/m231testbackup/test__27april2019_afterfile_33.sql
+  797   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_35.sql
+  798   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_36.sql
+  799   mysql -u root -p m231test < /root/m231testbackup/test__27april2019_afterfile_36.sql
+  800   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_39.sql
+  801   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_40.sql
+  802   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_41.sql
+  803   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_42.sql
+  804   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_43.sql
+  805   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_44.sql
+  806   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_45.sql
+  807   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_46.sql
+  808   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_47.sql
+  809  mysql -u root -p
+  810   mysqldump -u demo -p m231test > /root/m231testbackup/test__27april2019_afterfile_fordbcompare.sql
+  811   mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/backup_dbcompare.sql
+  812  mysqldump -u Zirg_Produ_User -p Zirg_Produ > /root/backup2019/zirg_prod_April_30_2019.sql
+  813  mysql -u Zirg_Produ_User -p
+  814   mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/backup30april.sql
+  815  mysql -u root -p m231test3 < /root/backupsandbox2019/MySQLDB_27april2019.sql
+  816  mysql -u root -p m231test3 < /root/backupsandbox2019/backup30april.sql
+  817   mysqldump -u m231user -p m231db > /root/mage231_backup/m231_30aprilsql
+  818   mysqldump -u m231user -p m231db > /root/mage231_backup/m231_30april.sql
+  819  mysql -u root -p
+  820  mysql -u pww_jetuser -p
+  821  show databases;
+  822  mysql -u Zirg_Produ_User -p
+  823   mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_Prod_saurabh_Apr30.sql
+  824  mysql -u root -p
+  825   mysqldump -u demo -p m231test > /root/backup2019/zirg_test_saurabh_Apr30.sql
+  826   mysqldump -u demo -p m231test > /root/m231testbackup/m231test_1may.sql
+  827  mysql -u root -p
+  828  mysql -u root -p m231test_1may < /root/backupsandbox2019/m231test_1may.sql
+  829  mkdir test2.3.0
+  830  mkdir test2.3.1
+  831   mysqldump -u demo -p m231test_1may > /root/test2.3.1/m231test_1may_pure.sql
+  832   mysqldump -u demo -p m231test3 > /root/test2.3.0/m231__1may_pure.sql
+  833  mysql -u demo -p
+  834   mysqldump -u demo -p m231test_1may > /root/test2.3.1/m231test_1may_pure.sql
+  835   mysqldump -u Zirg_Produ_User -p zirg_produ > /root/test2.3.1/m231test_1may_pure.sql
+  836   mysqldump -u demo -p m231test_1may > /root/test2.3.1/m231test_1may_pure.sql
+  837   mysqldump -u Zirg_Produ_User -p zirg_produ > /root/test2.3.0/zirg_produ_pure_1may2019.sql
+  838   mysqldump -u demo -p m231test_1may > /root/test2.3.1/m231test_1may_pure.sql
+  839  mysql -u root -p m231test3 < /root/test2.3.0/zirg_produ_pure_1may2019_change.sql
+  840   mysqldump -u demo -p m231test3 > /root/test2.3.0/m231test_1may_afterdeletingproducts.sql
+  841   mysqldump -u demo -p m231test3 > /root/test2.3.0/m231test_1may_afterdeletingproducts_2.sql
+  842  mysqldump -u demo -p m231test3 > /root/test2.3.0/m231test_1may_afterdeletingproducts_2.sql
+  843   mysqldump -u demo -p m231test_1may > /root/test2.3.1/pure_1may2019.sql
+  844   mysqldump -u demo -p m231test_1may > /root/test2.3.1/pure_1may2019_beforegoinghome.sql
+  845   mysqldump -u demo -p m231test_1may > /root/test2.3.1/m231test_1may_pure_2may.sql
+  846   mysqldump -u demo -p m231test2 > /root/test2.3.0/m230test3_pure_2may.sql
+  847   mysqldump -u demo -p m231test3 > /root/test2.3.0/m230test3_pure_2may.sql
+  848   mysqldump -u demo -p m231test_1may > /root/test2.3.1/m231test_1may_pure_2may_2.sql
+  849  mysql -u root -p
+  850  mkdir reward_test
+  851   mysqldump -u demo -p reward_test > /root/reward_test/pure.sql
+  852   mysqldump -u demo -p reward_test > /root/reward_test/aftersampledata.sql
+  853   mysqldump -u demo -p reward_test > /root/reward_test/afterreward.sql
+  854  mysql -u root -p
+  855   mysqldump -u demo -p reward_test2 > /root/reward_test/pure.sql
+  856   mysqldump -u demo -p reward_test2 > /root/reward_test/afterreward.sql
+  857   mysqldump -u demo -p reward_test2 > /root/reward_test/afterreward_backup_before_manoj_work.sql
+  858  mkdir zirg_transfer
+  859   mysqldump -u demo -p m231test_1may > /root/zirg_transfer/tranferdb_10may2019.sql
+  860  mysql -u root -p
+  861   mysql -u demo -p m231test_1may < /root/zirg_transfer/tranferdb_10may2019_change.sql
+  862   mysql -u Zirg_Produ_user -p m231test_1may < /root/zirg_transfer/tranferdb_10may2019_change.sql
+  863   mysql -u root -p m231test_1may < /root/zirg_transfer/tranferdb_10may2019_change.sql
+  864   mysql -u demo -p m231test_1may < /root/zirg_transfer/tranferdb_10may2019.sql
+  865   mysql -u root -p m231test_1may < /root/zirg_transfer/tranferdb_10may2019.sql
+  866   mysql -u root -p zirg_sandbox < /root/zirg_transfer/tranferdb_10may2019_change.sql
+  867   mysql -u root -p m231test_1may < /root/zirg_transfer/tranferdb_10may2019.sql
+  868  mysql -u root -p
+  869   mysqldump -u Zirg_Produ_User -p zirg_produ > /root/backup2019/zirg_produ_10May_Saurabh.sql
+  870  mysql -u root -p zirg_sandbox < /root/zirg_transfer/tranferdb_10may2019_change2.sql
+  871   mysqldump -u demo -p reward_test2 > /root/reward_test/10may_purebackup.sql
+  872   mysqldump -u demo -p reward_test2 > /root/reward_test/10may_purebackup_2.sql
+  873   mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019.sql
+  874   mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_oneitem.sql
+  875   mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_beforesize.sql
+  876  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_beforesize.sql
+  877  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_aftersize.sql
+  878  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_afterdesigneradd.sql
+  879  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_after_1.sql
+  880  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_after_2.sql
+  881  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_after_3.sql
+  882  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_after_4.sql
+  883  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_after_5.sql
+  884  mysql -u Zirg_Sandbox_user -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_4.sql
+  885  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_4.sql
+  886  mysql -u Zirg_Sandbox_user -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_5.sql
+  887  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_after_5.sql
+  888  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_after_6.sql
+  889  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_after_7.sql
+  890  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_7.sql
+  891  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_8.sql
+  892  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_after_8.sql
+  893  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_after_9.sql
+  894  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_9.sql
+  895  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_after_10.sql
+  896  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_after_11.sql
+  897  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_after_12.sql
+  898  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_after_13.sql
+  899  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_final.sql
+  900  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_13.sql
+  901  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_final.sql
+  902  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_final.sql
+  903  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_13.sql
+  904  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_final2.sql
+  905  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_final2.sql
+  906  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_13.sql
+  907  cd /etc/my.cnf
+  908  which my.cnf
+  909  mysql -u root -p
+  910  history
+  911  cd /etc/mysql/mariadb.conf.d
+  912  cd /etc/mysqld
+  913  cd /etc/mysql
+  914  mysql -u root -p
+  915  vi ~/.my.cnf
+  916  cd /etc
+  917  ls
+  918  vi my.cnf
+  919  vi my.cnf.d
+  920  vi my.cnf
+  921  /etc/init.d/mysql restart
+  922  vi my.cnf
+  923  /etc/init.d/mysql restart
+  924  mysql -u root -p
+  925  vi my.cnf
+  926  mysql -u root -p
+  927  vi my.cnf
+  928  /etc/init.d/mysql restart
+  929  mysql -u root -p
+  930  vi my.cnf
+  931  grep -rl "innodb_buffer_pool_size" /*
+  932  sudo service mariadb restart
+  933  vi my.cnf
+  934  sudo service mariadb restart
+  935  mysql -u root -p
+  936  vi my.cnf
+  937  sudo service mariadb restart
+  938  mysql -u root -p
+  939  vi my.cnf
+  940  rm -r .my.cnf.swp"
+  941  rm -r .my.cnf.swp
+  942  sudo rm -r .my.cnf.swp
+  943  vi my.cnf
+  944  sudo service mariadb restart
+  945  mysql -u root -p
+  946  vi my.cnf
+  947  sudo service mariadb restart
+  948  mysql -u root -p
+  949  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_final2.sql
+  950  vi my.cnf
+  951  sudo service mariadb restart
+  952  mysql -u root -p
+  953  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_pure_10may2019_beforedoing.sql
+  954  [mysqld]
+  955  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_13.sql
+  956  $ mysqld --help --verbose
+  957  mysql -u root -p
+  958  mysqld --help
+  959  clear
+  960  mysqld --help --verbose
+  961  clear
+  962  mysql -u root -p
+  963  ps aux | grep mysql
+  964  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_10May.sql
+  965  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_10May_1.sql
+  966  mysql -u Zirg_Sandbox_user -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_10May_1.sql
+  967  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_10May_2.sql
+  968  mysql -u Zirg_Sandbox_user -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_10May_2.sql
+  969  mysqldump -u Zirg_Produ_User -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_10May_3.sql
+  970   mysqldump -u Zirg_Produ_User -p zirg_produ > /root/zirgsandbox_zirgprod_10May_3.sql
+  971   mysqldump -u Zirg_Produ_User -p zirg_produ > /root/zirgsandbox/zirgprod_10May_3.sql
+  972  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_11May.sql
+  973  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_13May.sql
+  974  mysql -u Zirg_Sandbox_user -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_12May.sql
+  975  reboot
+  976  mysql -u root -p zirg_sandbox < /root/zirgsandbox/13may2019/zirgsandbox_pure_13may2019.sql
+  977  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/13may2019/zirgsandbox_pure_13may2019.sql
+  978  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_13.sql
+  979  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_13may2019_after_13_add.sql
+  980  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/13may2019/zirgsandbox_pure_13may2019_after_13_add.sql
+  981  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019.sql
+  982  php bin/magento cache:flush
+  983  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_oneitem.sql
+  984  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019.sql
+  985  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_aftersize.sql
+  986  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_afterdesigneradd.sql
+  987  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_1.sql
+  988  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_2.sql
+  989  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_10.sql
+  990  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_11.sql
+  991  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_12.sql
+  992  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_after_13.sql
+  993  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_pure_10may2019_beforedoing.sql
+  994  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgprod_10May_3.sql
+  995  mysql -u root -p zirg_sandbox < /root/zirgsandbox/zirgsandbox_10May_3.sql
+  996  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_13May_1.sql
+  997  mysqldump -u Zirg_Sandbox_user -p zirg_sandbox > /root/zirgsandbox/zirgsandbox_13May_2.sql
+  998  qx69nmKgaW&&RE6pQy
+  999  history
+
+php Oauth test
+1  sudo apt update
+    2  sudo apt upgrade
+    3  sudo apt-get install apache2
+    4  sudo apt-get install php7.2
+    5  sudo apt-get install libapache2-mod-php
+    6  sudo apt-get install mysql-server
+    7  sudo apt-get install  php7.2-mysql php7.2-dom  php7.2-curl php7.2-intl php7.2-bcmath php7.2-soap php7.2-xsl php7.2-mbstring php7.2-zip php7.2-xml  php7.2-soap php7.2-ctype composer zip unzip
+    8  sudo apt-get install php7.2-gd
+    9  sudo apt-get install php7.2-mcrypt
+   10  sudo a2enmod rewrite
+   11  cd /etc/apache2/
+   12  sudo vi apache2.conf
+   13  sudo systemctl restart apache2.service
+   14  sudo chmod -R 777 /var/www/html
+   15  sudo chmod -R 777 /var/www/html/*
+   16  sudo apt-get install php-oauth-1.2.3
+   17  sudo apt-get install php-oauth
+   18  sudo apt-get remove php-oauth
+   19  sudo apt-get install php-oauth
+   20  sudo systemctl restart apache2.service
+   21  history

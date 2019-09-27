@@ -1,0 +1,157 @@
+completly removing mysql steps on centos 7
+----
+rpm -qa | grep mysql
+yum remove (all the files comes from rpm -qa | grep mysql)
+rm -rf /etc/my.cnf
+rm -rf /var/lib/mysql
+yum clean all
+reboot
+----
+
+module creator :
+https://cedcommerce.com/magento-2-module-creator/
+
+varnish configration on ubuntu 18.04
+https://hostadvice.com/how-to/how-to-setup-varnish-http-cache-on-an-ubuntu-18-04-vps-or-dedicated-server/
+
+
+magento2 tutorials series max pronko 
+https://www.youtube.com/watch?v=XPKAEnxrPIU&list=PLwcl8DqLMv9ev__Uxs-UxZg-6vH72UN4c
+
+404 error solution on homepage:
+https://github.com/Jitheesh/magento2/commit/3cbc7260205ee61b044c051dbbc999a05eea2529
+
+upgrading magento2
+https://www.youtube.com/watch?v=vxIiXeFwPTQ
+
+magento2 installation on aws
+https://www.youtube.com/watch?v=aJDSigVa7To
+
+Magento2 file permissions:
+https://community.magento.com/t5/Magento-2-x-Technical-Issues/Main-CRITICAL-Cannot-gather-stats/td-p/102970
+
+Magento2: Install and configure Varnish cache with HTTPS in Ubuntu
+https://www.emiprotechnologies.com/technical_notes/magento-technical-notes-60/post/magento2-install-and-configure-varnish-cache-with-https-in-ubuntu-641
+
+How to Install Magento 2 on Ubuntu 16 Using Nginx
+https://www.simicart.com/blog/magento-2-nginx/
+
+setting up crontab 
+https://www.cloudways.com/blog/magento-2-cron-job/
+
+Enable PHP mail() function on Ubuntu
+http://researchhubs.com/post/computing/linux-basic/enable-php-mail-function-to-work-on-ubuntu.html
+
+specific php version
+https://tecadmin.net/install-php5-on-ubuntu/
+
+excluding single folder while creating zip on linux:
+zip -r test.zip app/ -x "*/\code*"
+excluding multiple folder while creating zip on linux:
+ zip -r myarchive.zip public_html/ -x public_html/test/**\* public_html/sandbox/**\*
+
+ finding file using file name:
+ find /home/zirg/* -name "*.zip"
+
+
+installing specific version of magento2
+composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=2.3.1 /var/www/html/magento2
+
+ proc_open(): fork failed - Cannot allocate memory
+http://www.thisprogrammingthing.com/2016/proc-error-installing-with-composer/
+
+to remove php from ubuntu : sudo apt-get purge 'php*'
+new user in mysql and assigining database 
+CREATE USER 'demo'@'%' IDENTIFIED BY 'password@123P';
+GRANT ALL PRIVILEGES ON zirg . * TO 'demo'@'%';
+flush PRIVILEGES;
+user list : SELECT User,Host FROM mysql.user;
+deleting user : DROP USER 'testuser'@'localhost';
+
+
+sudo apt-get install  php7.2-mysql php7.2-dom  php7.2-curl php7.2-intl php7.2-bcmath php7.2-soap php7.2-xsl php7.2-mbstring php7.2-zip php7.2-xml  php7.2-soap php7.2-ctype composer zip unzip
+
+ export database on ubuntu server
+
+ mysqldump -u zg_produser -p zirg28jan > /root/backup2019/dbbackupzirg28jan.sql
+
+ import database on ubuntu server
+ mysql -u demo -p magento2 < /var/www/html/magento2/dbbackup.sql
+
+
+
+ centos 7
+ installing cpanel :https://www.youtube.com/watch?v=TjHJot6D6ds
+ changing memory_limit : sudo sed -i "s/memory_limit = .*/memory_limit = 756M/" /opt/cpanel/ea-php71/root/etc/php.ini
+ server restart : service httpd restart ,service httpd status
+ to list all installed packages :  yum list installed *php*
+ ssl certification :https://www.youtube.com/watch?v=Bu5LYhttTok
+ searching for file name :find / -name file.look    (file.look =filenmae we want to serach)
+
+ permissions for directory :find /home/zirg/www -type d -exec chmod 755 {} \;
+
+ permissions for files :  find /home/zirg/www -type f -exec chmod 644 {} \;
+ 
+ installing particular php version on centos 7 : launch apache with php7.1 version on centos 7 server
+
+ getting apache info like httpd.conf path and all : httpd -v
+ getting all info regarding server like ip's     :ifconfig  
+ to check apache : rpm -q httpd (gives all list of apache congifration files)
+ to install mysql directly on centos 7server : https://www.linode.com/docs/databases/mysql/how-to-install-mysql-on-centos-7/
+
+ cli issue :yum install ea-php71
+            source /opt/cpanel/ea-php71/enable
+
+
+
+putty with xming :
+http://laptops.eng.uci.edu/software-installation/using-linux/how-to-configure-xming-putty
+learning magento2 :
+https://share.nxtcloud.net/mirror/WebDev/Magento/Magento%202%20Developers%20Guide.pdf
+
+K28zz1LK26h
+Zirg_Produ_Password
+vivabella.saunitech.com
+UserName: vbella
+PassWord: VBella@!123
+
+magento2 cron jobs command :
+php bin/magento cron:install
+php bin/magento cron:run
+
+db cronjob :
+script 
+/usr/bin/mysqldump  -u root -pSaurabh@123 ZG_Produ > /var/ZG_Produ_cronbkp/MySQLDB_`date +"%Y%m%d"`.sql
+crontab -l ( to view cron jobs)
+ex : 30 2 * * * /var/cronzirg23/MySQLdump2.sh 2>&1>>/var/cronzirg23/mysqbackupnew3.log
+crontab -e (to set cron jon)
+crontab -r ( to remove all cron jobs)
+
+
+cronjob:
+30 23 * * * /home/jiansen/bk/MySQLdump.sh 2>&1>>/home/jiansen/bk/mysqbackup.log
+
+https://www.learnopencv.com/install-opencv-3-4-4-on-ubuntu-16-04/
+http://www.codebind.com/cpp-tutorial/install-opencv-ubuntu-cpp/
+
+sudo apt install python3-pip
+updating pip :
+sudo pip3 install  --upgrade pip
+updating pip in virtual env:
+python3 -m pip install --upgrade pip setuptools wheel
+
+
+https://www.learnopencv.com/install-opencv-docker-image-ubuntu-macos-windows/
+
+How To Add Swap Space on Ubuntu 18.04
+https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/
+
+basic flask api:
+https://www.youtube.com/watch?v=s_ht4AKnWZg
+
+taking selfie:
+https://makitweb.com/how-to-capture-picture-from-webcam-with-webcam-js/ only works with https
+
+ 
+
+

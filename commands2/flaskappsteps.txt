@@ -1,0 +1,93 @@
+    1  sudo apt update
+    2  sudo apt upgrade
+    4  sudo hostnamectl set-hostname flaskapp
+    5  sudo vi /etc/hosts
+        add : ip and hostname
+    6  sudo ufw default allow outgoing
+    7  sudo ufw default deny incoming
+    8  sudo ufw allow ssh
+    9  sudo ufw allow 5000
+   10  sudo ufw enable
+   11  sudo ufw status
+   12  sudo apt install python3-pip
+   13  ls
+   14  mkdir flaskapp
+   15  cd flaskapp
+   16  sudo -H pip3 install --upgrade pip
+   17  sudo apt install python3-venv
+   18  cd ..
+   19  python3 -m venv flaskapp/venv
+   20  cd flaskapp
+   21  ls
+   22  source venv/bin/activate
+   24  pip install flask
+   32  sudo apt install nginx
+   33  pip  install gunicorn
+   35  sudo rm /etc/nginx/sites-enabled/default
+   36  sudo vi /etc/nginx/sites-enabled/flaskapp
+       add :
+       server {
+       listen 80;
+       server_name 18.222.230.185;
+       location /static {
+                alias /home/ubuntu/flaskapp/static;
+}
+
+       location / {
+               proxy_pass http://localhost:8000;
+               include /etc/nginx/proxy_params;
+               proxy_redirect off;
+}
+
+}
+or 
+for cross origin issue:
+server{
+     listen 80;
+     server_name 35.238.92.116;
+     location /static {
+              alias /var/www/html/facelandmark/static;             
+}
+     location / {
+             add_header 'Access-Control-Allow-Origin' '*';
+             add_header 'Access-Control-Allow-Credentials' 'true';
+             add_header 'Access-Control-Allow-Methods' 'GET, POST';
+             add_header 'Access-Control-Allow-Headers' 'DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type';
+             add_header 'Access-Control-Max-Age' 86400;
+             add_header 'Content-Type' 'text/plain charset=UTF-8';
+             proxy_pass http://localhost:8000;
+             include /etc/nginx/proxy_params;
+             proxy_redirect off;
+} 
+
+}
+
+
+   37  sudo ufw allow http/tcp
+   38  sudo ufw delete allow 5000
+   39  sudo ufw enable
+   40  sudo systemctl restart nginx
+   42  nproc --all
+   43  gunicorn -w 3 filename:app
+       filename=main file which contains app
+       for coonection in use error : sudo fuser -k 8000/tcp 
+       getting list of running process: grep id's (sudo netstat -nlp | grep :80)
+       getting list of running process id'd : pgrep -f gunicorn
+       after getting list : sudo kill -9 all the id's example: sudo kill -9 9760 9763 9764 9765 3914 4724  
+   44 sudo apt install supervisor
+   45 sudo vi /etc/supervisor/conf.d/flaskapp.conf
+      add :
+      [program:flaskapp]
+      directory=/home/ubuntu/flaskapp
+      command=/home/ubuntu/flaskapp/venv/bin/gunicorn -w 3 app:app
+      user=ubuntu
+      autostart=true
+      autorestart=true
+      stopasgroup=true
+      killasgroup=true
+      stderr_logfile=/var/log/flaskapp/flaskapp.err.log
+      stdout_logfile=/var/log/flaskapp/flaskapp.out.log 
+   46 sudo mkdir -p /var/log/flaskapp
+   47  sudo touch /var/log/flaskapp/flaskapp.err.log
+   48  sudo touch /var/log/flaskapp/flaskapp.out.log
+   49 sudo supervisorctl reload

@@ -1,0 +1,565 @@
+Python:
+flask-api :
+1  sudo apt install ufw
+    2  sudo ufw default allow outgoing
+    3  sudo ufw default deny incoming
+    4  sudo ufw allow ssh
+    5  sudo ufw allow 5000
+    6  sudo ufw enable
+    7  sudo ufw status
+    8  sudo apt install python3-pip
+    9  sudo -H pip3 install --upgrade pip
+   10  sudo apt install python3-venv
+   11  python3 -m venv Flask_Blog/venv
+   12  cd Flask_Blog
+   13  ls
+   14  source venv/bin/activate
+   15  ls
+   16  pip install -r requirements.txt
+   17  pip install flask
+   18  python3
+   19  sudo touch /etc/config.json
+   20  sudo vi /etc/config.json
+   21  sudo vi flaskblog/config.py
+   22  export FLASK_APP=run.py
+   23  flask run --host=0.0.0.0
+   24  sudo vi flaskblog/config.py
+   25  flask run --host=0.0.0.0
+   26  cd ..
+   27  sudo apt install nginx
+   28  pip  install gunicorn
+   29  sudo rm /etc/nginx/sites-enabled/default
+   30  sudo vi /etc/nginx/sites-enabled/flaskblog
+   server {
+       listen 80;
+       sever_name 18.222.230.185;
+       location /static {
+                alias /home/ubuntu/flaskapp/static;
+}
+
+       location / {
+               proxy_pass http://localhost:8000;
+               include /etc/nginx/proxy_params;
+               proxy_redirect off;
+}
+
+}
+
+   31  sudo ufw allow http/tcp
+   32  sudo ufw delete allow 5000
+   33  sudo ufw enable
+   34  sudo systemctl restart nginx
+   35  nptoc --all
+   36  nproc --all
+   37  gunicorn -w 3 run:app
+   38  cd Flask_Blog
+   39  gunicorn -w 3 run:app
+   40  sudo vi flaskblog/config.py
+   41  sudo vi /etc/config.json
+   42  gunicorn -w 3 run:app
+   43  sudo apt install supervisor
+   44  sudo vi /etc/supervisor/conf.d/flaskblog.conf
+   45  sudo mkdir -p /var/log/flaskblog
+   46  sudo touch /var/log/flaskblog/flaskblog.err.log
+   47  sudo touch /var/log/flaskblog/flaskblog.out.log
+   48  sudo supervisorctl reload
+   49  sudo vi /etc/config.json
+   50  sudo vi /etc/supervisor/conf.d/flaskblog.conf
+   51  sudo supervisorctl reload
+   52  sudo vi /etc/supervisor/conf.d/flaskblog.conf
+   53  sudo supervisorctl reload
+   54  sudo vi /etc/supervisor/conf.d/flaskblog.conf
+   55  sudo supervisorctl reload
+   56  pip install connexion
+   57  sudo supervisorctl reload
+   58  sudo vi /etc/supervisor/conf.d/flaskblog.conf
+   59  sudo supervisorctl reload
+   60  apt uppdate
+   61  sudo su
+   62  cd Flask_Blog
+   63  source venv/bin/activate
+   64  sudo supervisorctl reload
+   65  sudo vi /etc/supervisor/conf.d/flaskblog.conf
+   66  sudo supervisorctl reload
+   67  sudo vi /etc/supervisor/conf.d/flaskblog.conf
+   68  sudo supervisorctl reload
+   69  sudo vi /etc/supervisor/conf.d/flaskblog.conf
+   70  sudo supervisorctl reload
+   71  sudo vi /etc/supervisor/conf.d/flaskblog.conf
+   72  sudo supervisorctl reload
+   73  sudo vi /etc/supervisor/conf.d/flaskblog.conf
+   74  gunicorn -w 3 apitest:app
+   75  sudo supervisorctl reload
+   76  history
+   77  sudo vi /etc/nginx/sites-enabled/flaskblog
+   78  sudo systemctl restart nginx
+   79  sudo vi /etc/supervisor/conf.d/flaskblog.conf
+   80  sudo supervisorctl reload
+   81  sudo vi /etc/supervisor/conf.d/flaskblog.conf
+   82  sudo tm -r /etc/supervisor/conf.d/.flaskblog.conf.swp
+   83  sudo vi /etc/supervisor/conf.d/flaskblog.conf
+   84  rm "/etc/supervisor/conf.d/.flask
+   85  rm /etc/supervisor/conf.d/.flaskblog.conf.swp
+   86  sudo vi /etc/supervisor/conf.d/flaskblog.conf
+   87  sudo rm /etc/supervisor/conf.d/.flaskblog.conf.swp
+   88  sudo vi /etc/supervisor/conf.d/flaskblog.conf
+   89  sudo supervisorctl reload
+   90  sudo systemctl restart nginx
+   91  sudo vi /etc/nginx/sites-enabled/flaskblog
+   92  sudo systemctl restart nginx
+   93  sudo vi /etc/nginx/sites-enabled/flaskblog
+   94  sudo systemctl restart nginx
+   95  sudo supervisorctl reload
+   96  pip install flask.make_response
+   97  pip install flask-make_response
+   98  pip install Flask-Make_response
+   99  pip install Flask-Make_Response
+  100  sudo supervisorctl reload
+  101  sudo vi /etc/nginx/sites-enabled/flaskblog
+  102  sudo vi /etc/supervisor/conf.d/flaskblog.conf
+  103  sudo supervisorctl reload
+
+
+Face_land:
+  1  python3 --version
+    2  sudo apt-get update
+    3  sudo apt-get upgrade
+    4  sudo apt-get install build-essential cmake unzip pkg-config
+    5  sudo apt-get install libjpeg-dev libpng-dev libtiff-dev
+    6  sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+    7  sudo apt-get install libxvidcore-dev libx264-dev
+    8  sudo apt-get install libgtk-3-dev
+    9  sudo apt-get install libatlas-base-dev gfortran
+   10  sudo apt-get install python3-dev
+   11  cd ~
+   12  wget -O opencv.zip https://github.com/opencv/opencv/archive/3.4.4.zip
+   13  wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/3.4.4.zip
+   14  ls
+   15  unzip opencv.zip
+   16  unzip opencv_contrib.zip
+   17  ls
+   18  mv opencv-3.4.4 opencv
+   19  $ mv opencv-3.4.4 opencv
+   20  ls
+   21  wget https://bootstrap.pypa.io/get-pip.py
+   22  sudo python3 get-pip.py
+   23  sudo pip install virtualenv virtualenvwrapper
+   24  sudo rm -rf ~/get-pip.py ~/.cache/pip
+   25  echo -e "\n# virtualenv and virtualenvwrapper" >> ~/.bashrc
+   26  echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.bashrc
+   27  echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> ~/.bashrc
+   28  echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.bashrc
+   29  source ~/.bashrc
+   30  mkvirtualenv cv -p python3
+   31  $ workon cv
+   32  pip install numpy
+   33  cd ~/opencv
+   34  mkdir build
+   35  cd build
+   36  clear
+   37  cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTALL_PYTHON_EXAMPLES=ON -D INSTALL_C_EXAMPLES=OFF -D OPENCV_ENABLE_NONFREE=ON -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules -D PYTHON_EXECUTABLE=~/.virtualenvs/cv/bin/python -D BUILD_EXAMPLES=ON ..
+   38  clear
+   39  make -j4
+   40  cd ..
+   41  rm -r build
+   42  mkdir build
+   43  cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTALL_PYTHON_EXAMPLES=ON -D INSTALL_C_EXAMPLES=OFF -D ENABLE_PRECOMPILED_HEADERS=OFF-D OPENCV_ENABLE_NONFREE=ON -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules -D PYTHON_EXECUTABLE=~/.virtualenvs/cv/bin/python \
+   44  cd build
+   45  cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTALL_PYTHON_EXAMPLES=ON -D INSTALL_C_EXAMPLES=OFF -D ENABLE_PRECOMPILED_HEADERS=OFF-D OPENCV_ENABLE_NONFREE=ON -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules -D PYTHON_EXECUTABLE=~/.virtualenvs/cv/bin/python -D BUILD_EXAMPLES=ON ..
+   46  make -j4
+   47  Serial.print('\n');
+   48  python3
+   49  vi ~/.bashrc
+   50  cd
+   51  pwd
+   52  ls
+   53  ls -l
+   54  which .virtualenvs
+   55  cd opencv
+   56  cd build
+   57  cd ..
+   58  rm -r
+   59  rm -r build
+   60  mkdir build
+   61  cd build
+   62  ls
+   63  cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTALL_PYTHON_EXAMPLES=ON -D INSTALL_C_EXAMPLES=OFF -D ENABLE_PRECOMPILED_HEADERS=OFF-D OPENCV_ENABLE_NONFREE=ON -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules -D PYTHON_EXECUTABLE=~/.virtualenvs/cv/bin/python -D BUILD_EXAMPLES=ON ..
+   64  make
+   65  workon cv
+   66  cd opencv/build
+   67  make
+   68  cd opencv/build
+   69  make
+   70  cd opencv/build
+   71  make
+   72  sudo swapon --show
+   73  workoncv
+   74  workon cv
+   75  make
+   76  deactivate
+   77  sudo fallocate -l 1G /swapfile
+   78  sudo chmod 600 /swapfile
+   79  ls
+   80  which swapfile
+   81  sudo mkswap /swapfile
+   82  sudo swapon /swapfile
+   83  sudo nano /etc/fstab
+   84  sudo swapon --show
+   85  sudo free -h
+   86  cat /proc/sys/vm/swappiness
+   87  workon cv
+   88  make
+   89  cd opencv/build
+   90  workon cv
+   91  make
+   92  sudo make install
+   93  sudo ldconfig
+   94  pkg-config --modversion opencv
+   95  ls /usr/local/python/cv2/python-3.6
+   96  cd /usr/local/python/cv2/python-3.6
+   97  ls
+   98  sudo mv cv2.cpython-36m-x86_64-linux-gnu.so cv2.so
+   99  ls
+  100  cd ~/.virtualenvs/cv/lib/python3.6/site-packages/
+  101  ln -s /usr/local/python/cv2/python-3.6/cv2.so cv2.so
+  102  cd ~
+  103  workon cv
+  104  python
+  105  cd ~
+  106  rm opencv.zip opencv_contrib.zip
+  107  rm -rf opencv opencv_contrib
+  108  ipython
+  109  pip install ipython
+  110  ipython
+  111  pip install matplotlib
+  112  pwd
+  113  mkdir test
+  114  ipython
+  115  deactivate
+  116  sudo apt-get install python3-tk
+  117  python
+  118  workon cv
+  119  python
+  120  pip install wheel
+  121  ipython
+  122  workon cv
+  123  ipython
+  124  workon cv
+  125  ipython
+  126  workon cv
+  127  ipython
+  128  workon cv
+  129  ipyhton
+  130  ipython
+  131  workon cv
+  132  ipython
+  133  workon cv
+  134  ipython
+  135  php bin/magento setup:di:compile
+  136  cd public_html
+  137  pwd
+  138  cd ..
+  139  cd zirg
+  140  ls
+  141  workon cv
+  142  ipython
+  143  workon cv
+  144  ipython
+  145  activate cv2
+  146  workon cv
+  147  ipython
+  148  workon cv
+  149  ipython
+  150  workon cv
+  151  ipython
+  152  which sshd_config
+  153  which ssh
+  154  vi /usr/bin/ssh
+  155  vi /usr/bin/ssh/sshd_config
+  156  cd /usr/bin/ssh
+  157  cd /usr/bin/
+  158  ls
+  159  ls -l
+  160  cd ssh
+  161  cd
+  162  cd /home/ubuntu
+  163  which ssh
+  164  which config
+  165  which sshd_config
+  166  sudo vi /usr/bin/ssh/sshd_config
+  167  chmod 755 /usr/bin/ssh/sshd_config
+  168  sudo chmod 755 /usr/bin/ssh/sshd_config
+  169  sudo chmod -R 755 /usr/bin/ssh/sshd_config
+  170  cd /home
+  171  ls
+  172  cd /ubuntu
+  173  cdubutu
+  174  cd ubutu
+  175  cd ubuntu
+  176  ls
+  177  cd /etc
+  178  ls
+  179  cd ssh
+  180  ls
+  181  vi sshd_config
+  182  cd /var
+  183  mkdir www
+  184  sudo mkdir www
+  185  cd  www
+  186  sudo mkdir html
+  187  cd html
+  188  touch index.html
+  189  sudo chmod -R 777 /var/www/html/*
+  190  sudo chmod -R 777 /var/www/*
+  191  apt-get install xorg-x11-xauth-xterm
+  192  sudo apt-get install xorg-x11-xauth-xterm
+  193  sudo apt-get install xorg-x11-xauth xterm
+  194  sudo apt-get update
+  195  sudo apt-get upgrade
+  196  sudo apt-get install xorg openbox
+  197  sudo apt-get install xorg
+  198  cd
+  199  cd /etc/ssh
+  200  ls
+  201  vi sshd_config
+  202  sudo vi sshd_config
+  203  /etc/init.d/sshd restart
+  204  /etc/ssh/init.d/sshd restart
+  205  system g
+  206  xtem g
+  207  xterm g
+  208  xterm s
+  209  xterm
+  210  xclock
+  211  xc lock
+  212  xclock
+  213  ping 2405:204:130a:d93c:f1a7:3b08:3861:8095
+  214  workon cv
+  215  cd /home/ubuntu/test
+  216  ipython
+  217  sudo reboot
+  218  workon cv
+  219  cd /home/ubuntu/test
+  220  ipython
+  221  xhost +
+  222  workon cv
+  223  ipythin
+  224  ipython
+  225  ls /dev/video*
+  226  v4l2-ctl --list-devices
+  227  apt-get install v4l-utils
+  228  deactivate
+  229  apt-get install v4l-utils
+  230  sudo apt-get install v4l-utils
+  231  workon cv
+  232  ipython
+  233  xhost +
+  234  /usr/X11R6/bin/xclock
+  235  ssh -F /etc/ssh/ssh_config -X
+  236  ~/.xsession
+  237  xhost +localhost
+  238  xhost +
+  239  reboot
+  240  sudo reboot
+  241  workon cv
+  242  ipython
+  243  cd /usr/include/linux
+  244  sudo ln -s -f ../libv4l1-videodev.h videodev.h
+  245  sudo apt -y install libvorbis-dev libxvidcore-dev
+  246  sudo apt -y install libavresample-dev
+  247  sudo apt -y install x264 v4l-utils
+  248  sudo apt -y install libgphoto2-dev libeigen3-dev libhdf5-dev doxygen
+  249  cd ..
+  250  cd
+  251  sudo reboot
+  252  xhost +
+  253  workon cv
+  254  ipython
+  255  workon cv
+  256  pip --version
+  257  pip update
+  258  pip3 --version
+  259  pip install scipy
+  260  pip install --upgrade pip
+  261  pip install dlib
+  262  python
+  263  workoncv
+  264  workon cv
+  265  ipython
+  266  workon cv
+  267  ipython
+  268  workoncv
+  269  workon cv
+  270  ipython
+  271  cd test
+  272  pwd
+  273  python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
+  274  pip install --upgrade imutils
+  275  python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
+  276  cd ..
+  277  cd face
+  278  cd face_land
+  279  python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
+  280  chmod -R 777 /home/ubuntu/face_land/*
+  281  python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
+  282  workon cv
+  283  cd facial_landmark
+  284  cd facial_land
+  285  cd face_land
+  286  python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
+  287  workon cv
+  288  ls
+  289  cd face_land
+  290  python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
+  291  workon cv
+  292  cd test
+  293  ipyhton
+  294  ipython
+  295  workon cv
+  296  python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
+  297  cd test
+  298  python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
+  299  cd ..
+  300  cd face_land
+  301  python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
+  302  workon cv
+  303  cd face_land
+  304  python test2.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
+  305  python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
+  306  python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/testimage1.jpg
+  307  python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/testimage2.jpg
+  308  python test2.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/testimage21.jpg
+  309  python test2.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/testimage2.jpg
+  310  python test2.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/testiamge1.jpg
+  311  python test2.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/testimagee1.jpg
+  312  python test2.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/testimage1.jpg
+  313  python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/testimage1.jpg
+  314  workon cv
+  315  python test1.py
+  316  cd face_land
+  317  python test1.py
+  318  python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
+  319  python test1.py
+  320  python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
+  321  python test1.py
+  322  p
+  323  python test1.py
+  324  python test2.py
+  325  workon cv
+  326  cd face_land
+  327  python facial_landmarks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
+  328  python test2.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/testimage1.jpg
+  329  python test3.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/testimage1.jpg
+  330  python test3.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/example_01.jpg
+  331  workoncv
+  332  python test3.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/testimage1.jpg
+  333  cd face_land
+  334  python test3.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/testimage1.jpg
+  335  workon cv
+  336  python test3.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/testimage1.jpg
+  337  workon cv
+  338  cd test
+  339  python test4.py
+  340  cv2.imshow("Output", image)
+  341  python test4.py
+  342  workoncv
+  343  workon cv
+  344  cd test
+  345  python test4.py
+  346  vi test2.py
+  347  workon cv
+  348  cd face_land
+  349  python test3.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/testimage1.jpg
+  350  cd..mergingimages
+  351  cd ..
+  352  cd mergingimages
+  353  python land_marks.py --shape-predictor shape_predictor_68_face_landmarks.dat --image images/testimage1.jpg
+  354  cd ..
+  355  cp face_land/68_land.dat mergingimages/68_land.dat
+  356  python land_marks.py --shape-predictor 68_land.dat --image images/testimage1.jpg
+  357  cd mergingimages
+  358  python land_marks.py --shape-predictor 68_land.dat --image images/testimage1.jpg
+  359  python land_marks.py --shape-predictor 68_land.dat --image images/example_01.jpg
+  360  unzip watermarking.zip
+  361  cd watermarking/src
+  362  ls
+  363  import numpy
+  364  ipython
+  365  python glasses_and_stash.py
+  366  ipython
+  367  test1.py
+  368  python test.py
+  369  python test1.py
+  370  workon cv
+  371  cd /home/ubuntu/mergingimages/watermarking/src
+  372  python
+  373  python test1.py
+  374  clear
+  375  python test1.py
+  376  workon cv
+  377  cd /home/ubuntu/mergingimages/watermarking/src
+  378  python test1.py
+  379  vi test1.py
+  380  workon cv
+  381  cd var/www/html
+  382  cd var/www
+  383  cd var
+  384  pwd
+  385  ls
+  386  cd /var
+  387  cd /www
+  388  cd ww
+  389  cd www
+  390  cd html
+  391  ls
+  392  pip install flask
+  393  pip install connexion
+  394  python3 server.py
+  395  pip install SQLAlchemy
+  396  python3 server.py
+  397  pip install flask_sqlalchemy
+  398  python3 server.py
+  399  pip install flask_marshmallow
+  400  python3 server.py
+  401  clear
+  402  python3 server.py
+  403  python3
+  404  python flaskapp.py
+  405  export FLASK_APP=flaskapp.py
+  406  flask run
+  407  clear
+  408  flask run
+  409  python3 flaskapp.py
+  410  cd var/www/html
+  411  cd /var/www/html
+  412  python3 flaskapp.py
+  413  workon cv
+  414  python3 flaskapp.py
+  415  chmod -R 777 flaskapp.py
+  416  python3 flaskapp.py
+  417  sudo python3 flaskapp.py
+  418  python3 flaskapp.py
+  419  sudo pip install flask
+  420  sudo python3 flaskapp.py
+  421  export FLASK_APP=flaskapp.py
+  422  flask run
+  423  sudo flask run
+  424  sudo python3 flaskapp.py
+  425  export FLASK_DEBUG=1
+  426  sudo python3 flaskapp.py
+  427  sudo python3 flaskblog.py
+  428  workoncv
+  429  workon cv
+  430  cd /var/www/html
+  431  pip install flask_wtf
+  432  pip install flask-wtf
+  433  sudo python3 flaskblog.py
+  434  sudo pip install flask-wtf
+  435  sudo python3 flaskblog.py
+  436  cd test
+  437  workon cv
+  438  python3 linklist.py
+  439  python3 reverselinkedlist.py
+  440  vi reverselinkedlist.py
+  441  python3 reverselinkedlist.py
+  442  history
